@@ -8,7 +8,7 @@ ytd-topbar-logo-renderer #logo {
   position: relative; /* necessaire pour que le ::after se positionne */
   width: 240px;
   height: 80px;
-  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse.png");
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 25px 0px;
