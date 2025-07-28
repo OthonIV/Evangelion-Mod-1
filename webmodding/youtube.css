@@ -1,0 +1,83 @@
+/* Suppression du logo YouTube */
+ytd-topbar-logo-renderer #logo yt-icon {
+  display: none !important;
+}
+
+/* Logo Asuka personnalise */
+ytd-topbar-logo-renderer #logo {
+  position: relative; /* necessaire pour que le ::after se positionne */
+  width: 240px;
+  height: 80px;
+  background-image: url("https://i.imgur.com/nRdod1Y.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 25px 0px;
+  z-index: 0;
+}
+
+/* Statique */
+ytd-topbar-logo-renderer #logo::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  background-size: 600%;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  
+  /* masque basé sur ton SVG */
+  mask-image: url("https://yourdomain.com/ton-logo.svg"); /* mets ici le chemin réel vers ton SVG */
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
+  -webkit-mask-image: url("https://yourdomain.com/ton-logo.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+}
+
+/* Animation du gradient */
+@keyframes glowing {
+  0%   { background-position: 0 0; }
+  50%  { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* Activation au hover */
+ytd-topbar-logo-renderer #logo:hover::before {
+  animation: glowing 6s linear infinite;
+  opacity: 1;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------*/
+
+/* Enleve le FR moche */
+#country-code.style-scope.ytd-topbar-logo-renderer {
+  display: none;
+}
+
+/* enlevent le popup AdBlock */
+popup.ytd-popup-container {
+  display: none !important;
+}
+
+popup.tp-yt-iron-overlay-backdrop {
+  display: none !important;
+}
+
+popup.tp-yt-paper-dialog {
+  display: none !important;
+}
