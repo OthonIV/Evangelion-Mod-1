@@ -8,7 +8,7 @@ ytd-topbar-logo-renderer #logo {
   position: relative; /* necessaire pour que le ::after se positionne */
   width: 240px;
   height: 80px;
-  background-image: url("https://i.imgur.com/nRdod1Y.png");
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse%20283.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 25px 0px;
@@ -36,12 +36,12 @@ ytd-topbar-logo-renderer #logo::before {
   transition: opacity 0.3s ease-in-out;
   
   /* masque basé sur ton SVG */
-  mask-image: url("https://yourdomain.com/ton-logo.svg"); /* mets ici le chemin réel vers ton SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/a3fc58a1309331efed81ec137471e25ae147f056/Images/asuka%20reverse%20283.svg"); /* mets ici le chemin réel vers ton SVG */
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
 
-  -webkit-mask-image: url("https://yourdomain.com/ton-logo.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/a3fc58a1309331efed81ec137471e25ae147f056/Images/asuka%20reverse%20283.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
