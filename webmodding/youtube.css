@@ -26,23 +26,23 @@ ytd-topbar-logo-renderer #logo::before {
   position: absolute;
   top: -8px;
   left: -8px;
-  background-size: 110%;
+  background-size: 600%;
   width: calc(100% + 16px);
   height: calc(100% + 16px);
   z-index: -1;
   pointer-events: none;
-  filter: blur(12px);
-  animation: glowing 20s linear infinite;
+  filter: blur(50px);
   transition: opacity 0.3s ease-in-out;
-  opacity: 0;
+  opacity: 1;
+  z-index: -1;
   
   /* Masque SVG */
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse.svg"); /* mets ici le chemin réel vers ton SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg"); /* mets ici le chemin réel vers ton SVG */
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
 
-  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
@@ -57,6 +57,7 @@ ytd-topbar-logo-renderer #logo::before {
 
 /* Activation au hover */
 ytd-topbar-logo-renderer #logo:hover::before {
+  animation: glowing 20s linear infinite;
   opacity: 1;
 }
 

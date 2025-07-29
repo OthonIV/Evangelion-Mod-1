@@ -3,49 +3,62 @@ ytd-topbar-logo-renderer #logo yt-icon {
   display: none !important;
 }
 
-/* Remplacement par le logo Asuka */ 
+/* Logo Asuka personnalise */
 ytd-topbar-logo-renderer #logo {
   position: relative; /* necessaire pour que le ::after se positionne */
   width: 240px;
   height: 80px;
-  background-image: url("https://i.imgur.com/nRdod1Y.png");
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 25px 0px;
+  z-index: 0;
 }
-
 
 /* Statique */
-ytd-topbar-logo-renderer #logo::after {
+ytd-topbar-logo-renderer #logo::before {
   content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://i.imgur.com/nRdod1Y.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 25px 0px;
-  filter: drop-shadow(0 0 10px rgba(243, 8, 8, 0.94)); /* pas de halo au repos */
-  pointer-events: none;
+  top: -8px;
+  left: -8px;
+  background-size: 600%;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
   z-index: -1;
-  transition: filter 0.3s ease;
+  pointer-events: none;
+  filter: blur(50px);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  z-index: -1;
+  
+  /* Masque SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg"); /* mets ici le chemin réel vers ton SVG */
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
 }
 
-/* Animation */
-@keyframes haloPulse {
-  0%, 100% {
-    filter: drop-shadow(0 0 8px rgb(255, 0, 0));
-  }
-  50% {
-    filter: drop-shadow(0 0 12px rgb(255, 149, 0));
-  }
+/* Animation du gradient */
+@keyframes glowing {
+  0%   { background-position: 0 0; }
+  50%  { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
-/* Activation Curseur */
-ytd-topbar-logo-renderer #logo:hover::after {
-  animation: haloPulse 2s infinite ease-in-out;
+/* Activation au hover */
+ytd-topbar-logo-renderer #logo:hover::before {
+  animation: glowing 20s linear infinite;
+  opacity: 1;
 }
 
 
