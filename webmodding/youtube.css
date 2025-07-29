@@ -15,14 +15,13 @@ ytd-topbar-logo-renderer #logo {
   z-index: 0;
 }
 
+
 /* Statique */
 ytd-topbar-logo-renderer #logo::before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
-  );
+  background: red;
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
   position: absolute;
   top: -8px;
   left: -8px;
@@ -37,15 +36,15 @@ ytd-topbar-logo-renderer #logo::before {
   z-index: -1;
   
   /* Masque SVG */
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
-  mask-position: center;
+  mask-position: 25px 0px;
 
-  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  -webkit-mask-position: center;
+  -webkit-mask-position: 25px 0px;
 }
 
 /* Animation du gradient */
