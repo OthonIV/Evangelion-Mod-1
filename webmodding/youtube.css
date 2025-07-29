@@ -3,48 +3,51 @@ ytd-topbar-logo-renderer #logo yt-icon {
   display: none !important;
 }
 
-/* Logo Asuka personnalise */
+/* Logo Asuka personnalisé */
 ytd-topbar-logo-renderer #logo {
-  position: relative; /* necessaire pour que le ::after se positionne */
+  position: relative; /* Essential for positioning the ::before pseudo-element */
   width: 240px;
   height: 80px;
   background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/refs/heads/main/Images/asuka%20reverse.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 25px 0px;
-  z-index: 0;
+  z-index: 1;
 }
 
-
-/* Statique */
+/* Halo statique (affiché derrière le PNG) */
 ytd-topbar-logo-renderer #logo::before {
   content: "";
-  background: red;
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
-  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
   position: absolute;
-  top: -8px;
-  left: -8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
   background-size: 600%;
-  width: calc(100% + 16px);
-  height: calc(100% + 16px);
-  z-index: -1;
+
   pointer-events: none;
-  filter: blur(50px);
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
-  z-index: -1;
-  
+  z-index: 0;
+
   /* Masque SVG */
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: 25px 0px;
 
-  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: 25px 0px;
+
+  opacity: 0;
 }
 
 /* Animation du gradient */
@@ -54,7 +57,7 @@ ytd-topbar-logo-renderer #logo::before {
   100% { background-position: 0 0; }
 }
 
-/* Activation au hover */
+/* Activation du halo animé au survol */
 ytd-topbar-logo-renderer #logo:hover::before {
   animation: glowing 20s linear infinite;
   opacity: 1;
