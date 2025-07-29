@@ -37,7 +37,7 @@ ytd-topbar-logo-renderer #logo::before {
   z-index: -1;
   
   /* Masque SVG */
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg"); /* mets ici le chemin réel vers ton SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
