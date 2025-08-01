@@ -2,6 +2,9 @@
 ytd-topbar-logo-renderer #logo yt-icon {
   display: none !important;
 }
+ytd-yoodle-renderer{
+  display: none !important;
+}
 
 /* Logo Asuka personnalisé */
 ytd-topbar-logo-renderer #logo {
@@ -26,8 +29,8 @@ ytd-topbar-logo-renderer #logo::before {
 
   background: linear-gradient(
     45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
+    #000000, #5eff00, #00fffb, #002aff,
+    #ff00f2, #000000
   );
   background-size: 600%;
 
@@ -37,12 +40,12 @@ ytd-topbar-logo-renderer #logo::before {
   z-index: 0;
 
   /* Masque SVG */
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: 25px 0px;
 
-  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse.svg");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/asuka%20reverse%202.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: 25px 0px;
