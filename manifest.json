@@ -108,6 +108,14 @@
                     "matches":
                     [
                         "https://www.youtube.com/*"
+                    ],
+                    "css":
+                    [
+                        "webmodding/mainpage.css"
+                    ],
+                    "matches":
+                    [
+                        "chrome://startpageshared"
                     ]
                 }
             ],
