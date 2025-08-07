@@ -111,11 +111,12 @@
                     ],
                     "css":
                     [
-                        "webmodding/mainpage.css"
+                        "webmodding/main.theme.css",
+                        "webmodding/changecolors.css"
                     ],
                     "matches":
                     [
-                        "chrome://startpageshared"
+                        "https://*.discord.com/*"
                     ]
                 }
             ],

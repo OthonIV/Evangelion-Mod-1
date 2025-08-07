@@ -2,7 +2,7 @@
 ytd-topbar-logo-renderer #logo yt-icon {
   display: none !important;
 }
-ytd-yoodle-renderer{
+ytd-yoodle-renderer {
   display: none !important;
 }
 
@@ -74,6 +74,12 @@ ytd-topbar-logo-renderer #logo:hover::before {
 #country-code.style-scope.ytd-topbar-logo-renderer {
   display: none;
 }
+
+/* Enlève la bannière de promo */
+ytd-statement-banner-renderer #dismissible{
+  display: none !important;
+}
+
 
 /* Enlevent les popup AdBlock 
 popup.ytd-popup-container {
