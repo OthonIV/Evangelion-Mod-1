@@ -7,7 +7,7 @@
     },
     "icons":
     {
-        "512": "PngItem_3188855.png"
+        "512": "Sachiel Face.png"
     },
     "manifest_version": 3,
     "mod":
@@ -108,15 +108,6 @@
                     "matches":
                     [
                         "https://www.youtube.com/*"
-                    ],
-                    "css":
-                    [
-                        "webmodding/main.theme.css",
-                        "webmodding/changecolors.css"
-                    ],
-                    "matches":
-                    [
-                        "https://*.discord.com/*"
                     ]
                 }
             ],
