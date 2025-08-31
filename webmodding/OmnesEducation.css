@@ -1,0 +1,5 @@
+/*Logo Omnes Education*/
+.ibe_image_etab img{
+    content: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/Other/Evangelion%20logo.png");
+    margin-left: 40px;
+}

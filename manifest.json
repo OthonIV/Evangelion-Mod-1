@@ -109,6 +109,16 @@
                     [
                         "https://www.youtube.com/*"
                     ]
+                },
+                {
+                    "css":
+                    [
+                        "webmodding/OmnesEducation.css"
+                    ],
+                    "matches":
+                    [
+                        "https://planning-paris.omneseducation.com/*"
+                    ]
                 }
             ],
             "shaders":
