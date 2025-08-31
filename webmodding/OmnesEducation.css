@@ -1,5 +1,15 @@
 /*Logo Omnes Education*/
 .ibe_image_etab img{
-    content: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/Other/Evangelion%20logo.png");
-    margin-left: 40px;
+  display :none !important;
+}
+
+.ibe_image_etab{
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 275px;
+  height: 90px;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/EvangelionLogo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
