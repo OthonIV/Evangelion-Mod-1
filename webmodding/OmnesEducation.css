@@ -43,7 +43,7 @@ Couleur Bannière
 }
 
 /*
-Couleur Texte
+Couleur Texte Bannière
 */
 .ibe_etab {
   font-weight: bold;
@@ -90,22 +90,83 @@ Qualité Logo Hyperplanning
 }
 
 /*
+Bandeau Entete Menu
+*/
+.objetBandeauEntete_menu { /*Couleur du bandeau*/
+  background-color: #0e0e0e !important;
+}
+
+.item-menu_niveau0.focused-in, .item-menu_niveau0.item-selected { /*Pour assurer un fond de bonne couleur*/
+  background: #0e0e0e !important;
+}
+
+.item-menu_niveau0.item-selected .label-menu_niveau0 { /*Gradient sur la boite menu sélectionnée*/
+  background: linear-gradient(90deg, #7aea58, #62d6cf, #ddb559, #ec5896);
+  background-size: 400% 400%;
+  animation: aniGradient 8s ease-in-out infinite;
+  border-radius: 7px;
+  border-color: #FCD801 !important; /*Couleur de la bandelette*/
+}
+@keyframes aniGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.item-menu_niveau0.focused-in .label-menu_niveau0 { /*Gradient sur la boite menu au passage du curseur*/
+  background: linear-gradient(90deg, #7aea58, #62d6cf, #ddb559, #ec5896);
+  background-size: 400% 400%;
+  animation: aniGradient 8s ease-in-out infinite;
+  border-radius: 7px;
+  border-color: #FCD801 !important; /*Couleur de la bandelette*/
+}
+@keyframes aniGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/*Sous Menu*/
+.submenu-wrapper {
+  background-color: #e80a0a !important;
+}
+
+
+/*
+Bandeau Entete Second Menu
+*/
+.objetBandeauEntete_secondmenu {
+  background-color: #1f1d1c !important;
+}
+
+/*
 Widgets
 */
 .widget {
-  background-color: #0e0e0e !important; 
+  background-color: #140a0a !important; 
   color: #d3d3d3 !important;
 }
 
 .ie-ellipsis { /*Textes heures totales de cours*/
-  color: #ffeeb2 !important;
+  color: #d3d3d3 !important;
 }
 
-.clickable.ie-ellipsis { /*Exception pour du texte erreur "Dernières ressources pédagogiques"*/
+.clickable.ie-ellipsis { /*Exception "Dernières ressources pédagogiques"*/
   color: #4a1b7f !important;
 }
-.clickable.ie-ellipsis:hover { /*Exception pour du texte erreur "Dernières ressources pédagogiques" en Hover*/
+.clickable.ie-ellipsis:hover { /*Exception "Dernières ressources pédagogiques" en Hover*/
   color: #935ec7 !important;
+}
+
+.ocb-libelle.ie-ellipsis { /*Jour*/
+  color: #000000 !important;
+}
+
+
+/*
+Themes
+*/
+:root {
+  --theme-neutre-light: #151515 !important;
 }
 
 .ThemeTurquoise, /*Agenda - Boutons changement de jour*/
@@ -113,12 +174,4 @@ body:not(.ThemeAccessible) .ThemeCat-edt {
   --theme-claire: #e0aaaa !important;
   --theme-foncee: #A13213 !important;
   --theme-moyen1: #F04A1A !important;
-}
-
-
-/*
-Theme
-*/
-:root {
-  --theme-neutre-light: #151515 !important;
 }
