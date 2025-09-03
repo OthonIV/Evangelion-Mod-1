@@ -29,8 +29,8 @@ ytd-topbar-logo-renderer #logo::before {
 
   background: linear-gradient(
     45deg,
-    #000000, #5eff00, #00fffb, #002aff,
-    #ff00f2, #000000
+    #000000, #5eff00, #00fffb,
+    #002aff,#ff00f2, #000000
   );
   background-size: 600%;
 
@@ -44,11 +44,6 @@ ytd-topbar-logo-renderer #logo::before {
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: 25px 0px;
-
-  -webkit-mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/YouTube/asuka%20reverse%202.svg");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  -webkit-mask-position: 25px 0px;
 
   opacity: 0;
 }
