@@ -12,6 +12,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left bottom;
+  z-index: 1;
 }
 
 /*Photo de profil*/
@@ -20,7 +21,7 @@
 }
 
 .ibe_util_photo {
-  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/diddy.jpg");
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/Shinji%20pdp.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -30,6 +31,8 @@
 /*Bannière*/
 .ObjetBandeauEspace {
   background-color: rgb(0, 0, 0) !important;
+  align-items: flex-start !important;
+  padding-bottom: 53px;
 }
 
 .ibe_etab {
