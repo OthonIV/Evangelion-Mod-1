@@ -1,9 +1,9 @@
 /*Logo Omnes Education*/
-.ibe_image_etab img{
+.ibe_image_etab img {
   display :none !important;
 }
 
-.ibe_image_etab{
+.ibe_image_etab {
   margin-left: 5px;
   margin-top: 10px;
   width: 275px;
@@ -12,4 +12,48 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left bottom;
+}
+
+/*Photo de profil*/
+.ibe_util_photo img {
+  display: none !important;
+}
+
+.ibe_util_photo {
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/diddy.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border: 1px solid #FCD801 !important;
+}
+
+/*Bannière*/
+.ObjetBandeauEspace {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.ibe_etab {
+  font-weight: bold;
+  background: linear-gradient(90deg, #FCD801,#F04A1A);
+  background-clip: text;
+  color: transparent;
+}
+
+.ibe_util_texte {
+  font-weight: bold;
+  background: linear-gradient(90deg, #FCD801,#F04A1A);
+  background-clip: text;
+  color: transparent;
+}
+
+.icon_qr_code {
+  color: #F04A1A !important;
+}
+
+.icon_off {
+  color: #F04A1A !important;
+}
+
+.ibe_logo_image {
+  background-image: url("https://www.index-education.com/contenu/img/commun/logo-hyperplanning.png") !important;
 }
