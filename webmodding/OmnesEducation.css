@@ -1,4 +1,6 @@
-/*Logo Omnes Education*/
+/*
+Logo Omnes Education --> EvangelionLogo2
+*/
 .ibe_image_etab img {
   display :none !important;
 }
@@ -6,16 +8,19 @@
 .ibe_image_etab {
   margin-left: 5px;
   margin-top: 10px;
-  width: 275px;
-  height: 90px;
+  width: 350px;
+  height: 120%;
   background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/EvangelionLogo2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left bottom;
+  pointer-events: none;
   z-index: 1;
 }
 
-/*Photo de profil*/
+/*
+Photo de profil --> Shinji pdp
+*/
 .ibe_util_photo img {
   display: none !important;
 }
@@ -28,13 +33,18 @@
   border: 1px solid #FCD801 !important;
 }
 
-/*Bannière*/
+/*
+Couleur Bannière
+*/
 .ObjetBandeauEspace {
   background-color: rgb(0, 0, 0) !important;
   align-items: flex-start !important;
   padding-bottom: 53px;
 }
 
+/*
+Couleur Texte
+*/
 .ibe_etab {
   font-weight: bold;
   background: linear-gradient(90deg, #FCD801,#F04A1A);
@@ -49,6 +59,9 @@
   color: transparent;
 }
 
+/*
+Couleur Icônes: QR Code & Off
+*/
 .icon_qr_code {
   color: #F04A1A !important;
 }
@@ -57,6 +70,9 @@
   color: #F04A1A !important;
 }
 
+/*
+Qualité Logo Hyperplanning
+*/
 .ibe_logo_image {
   background-image: url("https://www.index-education.com/contenu/img/commun/logo-hyperplanning.png") !important;
 }
