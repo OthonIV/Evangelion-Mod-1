@@ -1,5 +1,5 @@
 /*
-Bannière
+|--- Bannière ---|
 */
 .ObjetBandeauEspace { /*Couleur Bannière*/
   background-color: var(--theme-neutre-light) !important;
@@ -82,7 +82,7 @@ Bannière
 
 
 /*
-Bandeau Entete Menu
+|--- Bandeau Entete Menu ---|
 */
 .objetBandeauEntete_menu { /*Couleur du bandeau*/
   background-color: #0e0e0e !important;
@@ -131,7 +131,7 @@ Bandeau Entete Menu
 
 
 /*
-Bandeau Entete Second Menu
+|--- Bandeau Entete Second Menu ---|
 */
 .objetBandeauEntete_secondmenu { /*Couleur du bandeau*/
   background-color: #1f1d1c !important;
@@ -163,33 +163,62 @@ Bandeau Entete Second Menu
   color: #dd6f59 !important;
 }
 
+/*
+|--- Corps de page ---|
+*/
+.AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_ {
+  background-color: transparent !important;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/Background%20Evangelion%202.jpg") !important;
+}
 
 /*
-Widgets
+|--- Widgets ---|
 */
 .widget { /*Couleur de fond des widgets*/
   background-color: #140a0a !important; 
   color: #d3d3d3 !important;
 }
 
-.ocb-libelle.ie-ellipsis { /*Texte du jour dans le calendrier*/
+/*Agenda*/
+.ocb-libelle.ie-ellipsis { /*Couleur texte du jour dans l'agenda*/
   color: #000000 !important;
 }
 
-.ie-ellipsis { /*Textes heures totales de cours*/
+.flex-contain.en-cours{ /*Fond de l'heure en cours relevé*/
+  background: rgba(255, 0, 0, 0.01) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
+}
+
+/*Enseignements par matière*/
+.clickable.ie-ellipsis#id_62_TitreText{ /*Texte "Enseignements par matière"*/
+  color: #A13213 !important;
+}
+
+.ProgressionCercle { /*Couleur cercle de progression*/
+  background-color: #b64642 !important;
+}
+
+.ProgressionCercle_libelle { /*Couleur intérieure du cercle de progression*/
+  background-color: #1f1d1c !important;
   color: #d3d3d3 !important;
 }
 
-/*Exceptions textes*/
-.clickable.ie-ellipsis { /*Exception "Dernières ressources pédagogiques"*/
+.ie-ellipsis { /*Couleur textes heures totales de cours*/
+  color: #d3d3d3 !important;
+}
+
+/*Dernières ressources pédagogiques*/
+.clickable.ie-ellipsis { /*Exception couleur texte "Dernières ressources pédagogiques"*/
   color: #4a1b7f !important;
 }
 
-.clickable.ie-ellipsis:hover { /*Exception "Dernières ressources pédagogiques" en Hover*/
+.clickable.ie-ellipsis:hover { /*Exception couleur texte "Dernières ressources pédagogiques" en Hover*/
   color: #935ec7 !important;
 }
 
-/*Icône "tout voir"*/
+/*Icônes "tout voir"*/
 .as-button.bt-widget.icon.icon_affichage_widget { /*Couleur icône "tout voir" widget*/
   background-color: #341a1a !important;
   color: #c3a6a6 !important;
@@ -204,7 +233,7 @@ Widgets
 
 
 /*
-Themes
+|--- Themes ---|
 */
 :root {
   --theme-neutre-light: #151515 !important;
