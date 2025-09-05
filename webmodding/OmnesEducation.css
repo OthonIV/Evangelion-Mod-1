@@ -166,9 +166,58 @@
 /*
 |--- Corps de page ---|
 */
-.AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_ {
-  background-color: transparent !important;
-  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/Background%20Evangelion%202.jpg") !important;
+.AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_ { /*Image de fond de page*/
+  background-color: var(--theme-neutre-light) !important;
+  position: relative; /* Essential for positioning the ::before pseudo-element */
+  width: 240px;
+  height: 80px;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/YouTube/asuka%20reverse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 25px 0px;
+  z-index: 1;
+}
+
+ytd-topbar-logo-renderer #logo::before {/*Halo statique (affiché derrière le PNG)*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    45deg,
+    #000000, #5eff00, #00fffb,
+    #002aff,#ff00f2, #000000
+  );
+  background-size: 600%;
+
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  z-index: 0;
+
+  /*Masque SVG*/
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: 25px 0px;
+
+  opacity: 0;
+}
+
+/*Animation du gradient*/
+@keyframes glowing {
+  0%   { background-position: 0 0; }
+  50%  { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* Activation du halo animé au survol */
+ytd-topbar-logo-renderer #logo:hover::before {
+  animation: glowing 20s linear infinite;
+  opacity: 1;
 }
 
 /*
