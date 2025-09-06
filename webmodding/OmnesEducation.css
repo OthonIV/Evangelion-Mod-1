@@ -242,6 +242,10 @@
   box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
 }
 
+.comtent-container.overflow-auto#id_64id_10::after{ /*Couleur icône "Agenda"*/
+  color: #F04A1A !important;
+}
+
 /*Enseignements par matière*/
 .clickable.ie-ellipsis#id_62_TitreText{ /*Texte "Enseignements par matière"*/
   color: #A13213 !important;
