@@ -120,7 +120,7 @@
   -webkit-backdrop-filter: blur(6px);
 }
 
-.item-menu_niveau1.menuitem-niveau.focused-in { /*Menu déroulant au passage du curseur*/
+.item-menu_niveau1.menuitem-niveau.focused-in { /*Éléments du Menu déroulant au passage du curseur*/
   background: rgba(255, 255, 255, 0.24) !important;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -230,9 +230,28 @@
   color: #d3d3d3 !important;
 }
 
+.as-button.bt-widget.icon.icon_affichage_widget { /*Couleur icône "tout voir"*/
+  background-color: #341a1a !important;
+  color: #c3a6a6 !important;
+  border: none !important;
+}
+
+.as-button.bt-widget.icon.icon_affichage_widget:hover { /*Couleur icône "tout voir" au Hover*/
+  background-color: #c3a6a6 !important;
+  color: #341a1a !important;
+  border: none !important;
+}
+
 /*Agenda*/
 .ocb-libelle.ie-ellipsis { /*Couleur texte du jour dans l'agenda*/
   color: #000000 !important;
+}
+
+.ocb_cont.as-input.as-date-picker.ie-ripple .ocb_bouton { /*Couleur icône calendrier à droite de "Date"*/
+  color: #A13213 !important;
+}
+.ocb_cont.as-input.as-date-picker.ie-ripple .ocb_bouton:hover { /*Couleur icône calendrier à droite de "Date" au Hover*/
+  color: #882d14 !important;
 }
 
 .flex-contain.en-cours{ /*Fond de l'heure en cours relevé*/
@@ -242,20 +261,35 @@
   box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
 }
 
-.comtent-container.overflow-auto#id_64id_10::after{ /*Couleur icône "Agenda"*/
-  color: #F04A1A !important;
+.icon_contenu_cours.avecFond.btnImage { /*Couleur icône "Contenu Pédagogique"*/
+  background-color: #A13213 !important;
+  color: #e0aaaa !important;
 }
-
-/*Enseignements par matière*/
-.clickable.ie-ellipsis#id_62_TitreText{ /*Texte "Enseignements par matière"*/
+.icon_contenu_cours.avecFond.btnImage:hover { /*Couleur icône "Contenu Pédagogique" au Hover*/
+  background-color: #e0aaaa !important;
   color: #A13213 !important;
 }
 
-.ProgressionCercle {
+/*Enseignements par matière*/
+.clickable.ie-ellipsis#id_62_TitreText { /*Texte "Enseignements par matière"*/
+  color: #A13213 !important;
+}
+.clickable.ie-ellipsis#id_62_TitreText:hover { /*Texte "Enseignements par matière"*/
+  color: #ca4520 !important;
+}
+
+.ocb_cont.as-input.as-select.ie-ripple .ocb_bouton { /*Couleur icône à droite de "Année complète"*/
+  color: #A13213 !important;
+}
+.ocb_cont.as-input.as-select.ie-ripple .ocb_bouton:hover{ /*Couleur icône à droite de "Année complète" au Hover*/
+  color: #882d14 !important;
+}
+
+.ProgressionCercle { /*Couleur du cercle de progression inachevé*/
   background-color: transparent !important;
 }
 
-.ProgressionCercle_firstClip, .ProgressionCercle_lastClip { /*Couleur cercle de progression*/
+.ProgressionCercle_firstClip, .ProgressionCercle_lastClip { /*Couleur cercle de progression achevé*/
   background-color: #b64642 !important;
   border-color: #b64642 !important;
 }
@@ -282,22 +316,27 @@
   color: #935ec7 !important;
 }
 
-/*Assiduité*/
-.content-container.overflow-auto#id_58id_10::after{ /*Couleur icône "Assiduité"*/
-  color: #145781 !important;
+/*Agenda fenêtre "Choisir un jour"*/
+.BloquerInterface.NePasImprimer.SansSelectionTexte.VoileOpaque50{ /*Blocage fond de fenêtre*/
+  background: rgb(53, 53, 53) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
-
-/*Icônes "tout voir"*/
-.as-button.bt-widget.icon.icon_affichage_widget { /*Couleur icône "tout voir" widget*/
-  background-color: #341a1a !important;
-  color: #c3a6a6 !important;
-  border: none !important;
+.Fenetre_Cadre.ombre-cadre { /*Couleur de fond*/
+  background-color: #140a0a !important; 
+  color: #d3d3d3 !important;
 }
-
-.as-button.bt-widget.icon.icon_affichage_widget:hover { /*Couleur icône "tout voir" au Hover*/
-  background-color: #c3a6a6 !important;
-  color: #341a1a !important;
-  border: none !important;
+.date.actif, .date { /*Couleur de fond Calendrier*/
+  background: #474747 !important;
+  color: #ffffff !important;
+}
+.date.actif:hover [id^="IE.Identite.collection"]{ /*Couleur de fond de la date au Hover*/
+  background: #A13213 !important;
+  color: #ffffff !important;
+}
+.date.actif.selected-date [id^="IE.Identite.collection"]{ /*Couleur bordure de la date active*/
+  border-color: #A13213 !important;
+  color: #ffffff !important;
 }
 
 
@@ -307,14 +346,14 @@
 :root {
   --theme-neutre-light: #151515 !important;
 }
-
+/*
 .ThemeTurquoise,
 body:not(.ThemeAccessible) .ThemeCat-edt {
-  --theme-claire: #e0aaaa !important; /*Icone Contenu Pédagogique "Agenda"*/
-  --theme-foncee: #A13213 !important; /*Icone Contenu Pédagogique "Agenda"*/
-  --theme-moyen1: #F04A1A !important; /*Icone Contenu Pédagogique "Agenda"*/
-  --theme-claire-scalePlus80: #d25858 !important; /*Dessin Widget "Agenda"*/
-}
+  --theme-claire: #e0aaaa !important; /*Icone Contenu Pédagogique "Agenda"
+  --theme-foncee: #A13213 !important; /*Icone Contenu Pédagogique "Agenda" & Bouton Suivant "Agenda" au Hover
+  --theme-moyen1: #F04A1A !important; /*Icone Contenu Pédagogique "Agenda" & Bouton Suivant "Agenda" & Contour de la date "Agenda"
+  --theme-claire-scalePlus80: #d25858 !important; /*Dessin Widget "Agenda"
+}*/
 
 .ThemeViolet,
 body:not(.ThemeAccessible) .ThemeCat-pedagogie {
@@ -338,4 +377,6 @@ body:not(.ThemeAccessible) .ThemeCat-communication {
 body:not(.ThemeAccessible) .ThemeEDT,
 body:not(.ThemeAccessible) .ThemeCat-viescolaire {
   --theme-claire-scalePlus80: #A13213 !important; /*Dessin Widget "Notes & Compétences"*/
+  --theme-foncee: #A13213 !important; /*Couleur texte "Assiduité"*/
+  --theme-moyen1: #ca4520 !important; /*Contour "Enseignements par matière"*/
 }
