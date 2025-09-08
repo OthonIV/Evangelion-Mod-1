@@ -58,7 +58,6 @@
 .icon_qr_code {
   color: #F04A1A !important;
 }
-
 .icon_off {
   color: #F04A1A !important;
 }
@@ -172,9 +171,8 @@
 /*
 |--- Corps de page ---|
 */
-
-[tabindex="-1"].AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_ { 
-  position: relative; /* Essential for positioning the ::before pseudo-element */
+[tabindex="-1"].AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_ { /*Svg de fond*/
+  position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
   width: 200vh;
   height: 200vh;
   background-color: #151515 !important;
@@ -185,8 +183,8 @@
   z-index: 1;
 }
 
-/* Halo statique (affiché derrière le PNG) */
-[tabindex="-1"].AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_::before {
+
+[tabindex="-1"].AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_::before { /*Gradient*/
   content: "";
   position: absolute;
   top: 0;
@@ -247,27 +245,46 @@
   color: #000000 !important;
 }
 
-.ocb_cont.as-input.as-date-picker.ie-ripple .ocb_bouton { /*Couleur icône calendrier à droite de "Date"*/
-  color: #A13213 !important;
+.icon_angle_right.fix-bloc.icon.btnImageIcon.btnImage, .icon_angle_left.fix-bloc.icon.btnImageIcon.btnImage { /*Couleur icône "Suivant"*/
+  background-color: #c91b21 !important;
 }
-.ocb_cont.as-input.as-date-picker.ie-ripple .ocb_bouton:hover { /*Couleur icône calendrier à droite de "Date" au Hover*/
+.icon_angle_right.fix-bloc.icon.btnImageIcon.btnImage:hover, .icon_angle_left.fix-bloc.icon.btnImageIcon.btnImage:hover { /*Couleur icône "Suivant"*/
+  background-color: #882d14 !important;
+}
+
+.ocb_cont.as-input.as-date-picker.ie-ripple { /*Bordure du jour*/
+  border-color: #c91b21 !important;
+  border-width: 2px !important;
+}
+.ocb_cont.as-input.as-date-picker.ie-ripple .ocb_bouton { /*Couleur petite icône calendrier*/
+  color: #c91b21 !important;
+}
+.ocb_cont.as-input.as-date-picker.ie-ripple .ocb_bouton:hover { /*Couleur petite icône calendrier au Hover*/
   color: #882d14 !important;
 }
 
+.text-center.ie-titre-couleur-lowercase.m-y {/*Couleur texte Semaine*/
+  color: #882d14 !important; 
+}
+
 .flex-contain.en-cours{ /*Fond de l'heure en cours relevé*/
-  background: rgba(255, 0, 0, 0.01) !important;
+  background: rgba(148, 148, 148, 0.135) !important;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(6px);
   box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
 }
 
 .icon_contenu_cours.avecFond.btnImage { /*Couleur icône "Contenu Pédagogique"*/
-  background-color: #A13213 !important;
-  color: #e0aaaa !important;
+  background-color: #c91b21 !important;
+  color: #e2bdbd !important;
 }
 .icon_contenu_cours.avecFond.btnImage:hover { /*Couleur icône "Contenu Pédagogique" au Hover*/
-  background-color: #e0aaaa !important;
-  color: #A13213 !important;
+  background-color: #e2bdbd !important;
+  color: #c91b21 !important;
+}
+
+.content-container.overflow-auto#id_64id_10::after { /*Couleur dessin*/
+  color: #d25858 !important; 
 }
 
 /*Enseignements par matière*/
@@ -338,7 +355,18 @@
   border-color: #A13213 !important;
   color: #ffffff !important;
 }
-
+.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage{ /*Buton Fermer*/
+  background-color: #A13213 !important;
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+  color: #ffffff !important;
+}
+.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover{ /*Buton Fermer au Hover*/
+  background-color: #ffffff !important;
+  border-color: #A13213 !important;
+  border-width: 2px !important;
+  color: #A13213 !important;
+}
 
 /*
 |--- Themes ---|
@@ -346,14 +374,6 @@
 :root {
   --theme-neutre-light: #151515 !important;
 }
-/*
-.ThemeTurquoise,
-body:not(.ThemeAccessible) .ThemeCat-edt {
-  --theme-claire: #e0aaaa !important; /*Icone Contenu Pédagogique "Agenda"
-  --theme-foncee: #A13213 !important; /*Icone Contenu Pédagogique "Agenda" & Bouton Suivant "Agenda" au Hover
-  --theme-moyen1: #F04A1A !important; /*Icone Contenu Pédagogique "Agenda" & Bouton Suivant "Agenda" & Contour de la date "Agenda"
-  --theme-claire-scalePlus80: #d25858 !important; /*Dessin Widget "Agenda"
-}*/
 
 .ThemeViolet,
 body:not(.ThemeAccessible) .ThemeCat-pedagogie {
