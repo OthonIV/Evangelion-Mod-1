@@ -150,7 +150,7 @@
   border-color: #fcb501 !important; /*Couleur de la bandelette*/
 }
 
-.item-menu_niveau1.menuitem-niveau.has-submenu.is-member-accueil:hover { /*Couleurs de "Accueil" en Hover*/
+.item-menu_niveau1.menuitem-niveau.has-submenu.is-member-accueil:hover { /*Couleurs de "Accueil" au Hover*/
   background: transparent !important;
   border-radius: 4px !important;
   border-left: #fcb501 4px solid !important; /*Couleur de la bandelette*/
@@ -264,7 +264,7 @@
 }
 
 .text-center.ie-titre-couleur-lowercase.m-y {/*Couleur texte Semaine*/
-  color: #882d14 !important; 
+  color: #c91b21 !important; 
 }
 
 .flex-contain.en-cours{ /*Fond de l'heure en cours relevé*/
@@ -276,15 +276,55 @@
 
 .icon_contenu_cours.avecFond.btnImage { /*Couleur icône "Contenu Pédagogique"*/
   background-color: #c91b21 !important;
-  color: #e2bdbd !important;
+  color: #ffffff !important;
 }
 .icon_contenu_cours.avecFond.btnImage:hover { /*Couleur icône "Contenu Pédagogique" au Hover*/
-  background-color: #e2bdbd !important;
-  color: #c91b21 !important;
+  background-color: #882d14 !important;
+  color: #ffffff !important;
 }
 
 .content-container.overflow-auto#id_64id_10::after { /*Couleur dessin*/
   color: #d25858 !important; 
+}
+
+/*Travail à faire*/
+.widget.ThemeCat-pedagogie.taf.collapsible .clickable#id_72_TitreText { /*Couleur texte en-tête*/
+  color: #e7901d !important;
+  font-weight: bold !important;
+}
+.widget.ThemeCat-pedagogie.taf.collapsible .clickable#id_72_TitreText:hover { /*Couleur texte en-tête au Hover*/
+  color: #a06519 !important;
+}
+.widget.ThemeCat-pedagogie.taf.collapsible .no-events p { /*Couleur texte "Aucun travail à faire" du dessous*/
+  color: #e7901d !important;
+}
+.content-container.overflow-auto#id_72id_10::after { /*Couleur dessin*/
+  color: #ffc77d !important; 
+}
+
+/*Dernières ressources pédagogiques*/
+.widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .clickable.ie-ellipsis { /*Couleur texte en-tête*/
+  color: #935ec7 !important;
+}
+.widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .clickable.ie-ellipsis:hover { /*Couleur texte en-tête au Hover*/
+  color: #4a1b7f !important;
+}
+.widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .no-events p { /*Couleur texte "Aucune ressource pédagogique"*/
+  color: #935ec7 !important;
+}
+.content-container.overflow-auto#id_70id_10::after { /*Couleur dessin*/
+  color: #bb83ff !important;
+}
+
+/*  --theme-claire-scalePlus80: #A13213 !important; Dessin Widget "Assiduité"
+  --theme-foncee: #A13213 !important; /*Couleur texte "Assiduité"*/*/
+
+/*Assiduité*/
+.widget.ThemeCat-viescolaire.absences.collapsible .clickable#id_58_TitreText { /*Couleur texte en-tête*/
+  color: #A13213 !important;
+}
+.widget.ThemeCat-viescolaire.absences.collapsible .clickable#id_58_TitreText:hover { /*Couleur texte en-tête au Hover*/
+  color: #A13213 !important;
 }
 
 /*Enseignements par matière*/
@@ -324,48 +364,58 @@
   color: #d3d3d3 !important;
 }
 
-/*Dernières ressources pédagogiques*/
-.clickable.ie-ellipsis { /*Exception couleur texte "Dernières ressources pédagogiques"*/
-  color: #4a1b7f !important;
-}
-
-.clickable.ie-ellipsis:hover { /*Exception couleur texte "Dernières ressources pédagogiques" en Hover*/
-  color: #935ec7 !important;
+.liste-matieres li:first-child { /*Bug barre du dessus 1er élément TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST*/
+  border-top: solid 1px var(--theme-claire-scalePlus60) !important;
 }
 
 /*Agenda fenêtre "Choisir un jour"*/
-.BloquerInterface.NePasImprimer.SansSelectionTexte.VoileOpaque50{ /*Blocage fond de fenêtre*/
+.BloquerInterface.NePasImprimer.SansSelectionTexte.VoileOpaque50 { /*Blocage fond de fenêtre*/
   background: rgb(53, 53, 53) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+
 .Fenetre_Cadre.ombre-cadre { /*Couleur de fond*/
   background-color: #140a0a !important; 
-  color: #d3d3d3 !important;
 }
-.date.actif, .date { /*Couleur de fond Calendrier*/
+
+.date.actif, .date { /*Couleur de fond & texte Calendrier*/
   background: #474747 !important;
   color: #ffffff !important;
+  font-weight: bold !important;
 }
-.date.actif:hover [id^="IE.Identite.collection"]{ /*Couleur de fond de la date au Hover*/
+
+.date:hover [id^="IE.Identite.collection"] { /*Date au Hover*/
   background: #A13213 !important;
-  color: #ffffff !important;
+  border-radius: 5px !important;
 }
-.date.actif.selected-date [id^="IE.Identite.collection"]{ /*Couleur bordure de la date active*/
+
+.date.actif.selected-date [id^="IE.Identite.collection"] { /*Couleur bordure & texte de la date active*/
   border-color: #A13213 !important;
-  color: #ffffff !important;
+  border-radius: 5px !important;
+  color: #A13213 !important;
+  font-weight: bold !important;
 }
-.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage{ /*Buton Fermer*/
+.date.actif.current-month.current-date.selected-date.b-left [id^="IE.Identite.collection"] > div > div { /*Couleur rond de la date active*/
+  background-color: #ffffff !important;
+}
+
+.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage { /*Buton Fermer*/
   background-color: #A13213 !important;
   border-color: #ffffff !important;
   border-width: 2px !important;
   color: #ffffff !important;
 }
-.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover{ /*Buton Fermer au Hover*/
+.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover { /*Buton Fermer au Hover*/
   background-color: #ffffff !important;
+  background-position: center !important;
   border-color: #A13213 !important;
   border-width: 2px !important;
   color: #A13213 !important;
+}
+
+.cta-conteneur { /*Supprime le bouton "Fermer / X" inutile*/
+  display: none !important; 
 }
 
 /*
@@ -373,17 +423,6 @@
 */
 :root {
   --theme-neutre-light: #151515 !important;
-}
-
-.ThemeViolet,
-body:not(.ThemeAccessible) .ThemeCat-pedagogie {
-  --theme-claire-scalePlus80: #8f58d2 !important; /*Dessin Widget "Travail à faire" & "Dernières ressources pédagogiques"*/
-}
-
-.ThemeBleu, body:not(.ThemeAccessible) .ThemeProduitEDT,
-body:not(.ThemeAccessible) .ThemeEDT,
-body:not(.ThemeAccessible) .ThemeCat-viescolaire {
-  --theme-claire-scalePlus80: #588dd2 !important; /*Dessin Widget "Notes & Compétences"*/
 }
 
 .ThemeVert,
@@ -396,7 +435,7 @@ body:not(.ThemeAccessible) .ThemeCat-communication {
 .ThemeBleu, body:not(.ThemeAccessible) .ThemeProduitEDT,
 body:not(.ThemeAccessible) .ThemeEDT,
 body:not(.ThemeAccessible) .ThemeCat-viescolaire {
-  --theme-claire-scalePlus80: #A13213 !important; /*Dessin Widget "Notes & Compétences"*/
+  --theme-claire-scalePlus80: #A13213 !important; /*Dessin Widget "Assiduité"*/
   --theme-foncee: #A13213 !important; /*Couleur texte "Assiduité"*/
   --theme-moyen1: #ca4520 !important; /*Contour "Enseignements par matière"*/
 }
