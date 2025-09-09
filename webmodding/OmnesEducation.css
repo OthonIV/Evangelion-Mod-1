@@ -2,11 +2,14 @@
 |--- Bannière ---|
 */
 .ObjetBandeauEspace { /*Couleur Bannière*/
-  background-color: var(--theme-neutre-light) !important;
+  background-color: #151515 !important;
   align-items: flex-start !important;
   padding-bottom: 53px;
 }
 
+.ObjetBandeauEspace .evitement { /*Ajouts ennuyeux au rafraîchissement de page*/
+  display: none !important;
+}
 
 /*Logo Omnes Education --> EvangelionLogo2*/
 .ibe_image_etab img { /*Supprimer le logo Omnes Education*/
@@ -296,7 +299,7 @@
   color: #a06519 !important;
 }
 .widget.ThemeCat-pedagogie.taf.collapsible .no-events p { /*Couleur texte "Aucun travail à faire" du dessous*/
-  color: #e7901d !important;
+  color: #a06519 !important;
 }
 .content-container.overflow-auto#id_72id_10::after { /*Couleur dessin*/
   color: #ffc77d !important; 
@@ -305,36 +308,60 @@
 /*Dernières ressources pédagogiques*/
 .widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .clickable.ie-ellipsis { /*Couleur texte en-tête*/
   color: #935ec7 !important;
+  font-weight: bold !important;
 }
 .widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .clickable.ie-ellipsis:hover { /*Couleur texte en-tête au Hover*/
   color: #4a1b7f !important;
 }
 .widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .no-events p { /*Couleur texte "Aucune ressource pédagogique"*/
-  color: #935ec7 !important;
+  color: #4a1b7f !important;
 }
 .content-container.overflow-auto#id_70id_10::after { /*Couleur dessin*/
   color: #bb83ff !important;
 }
 
-/*  --theme-claire-scalePlus80: #A13213 !important; Dessin Widget "Assiduité"
-  --theme-foncee: #A13213 !important; /*Couleur texte "Assiduité"*/*/
-
 /*Assiduité*/
 .widget.ThemeCat-viescolaire.absences.collapsible .clickable#id_58_TitreText { /*Couleur texte en-tête*/
-  color: #A13213 !important;
+  color: #ca4520 !important;
+  font-weight: bold !important;
 }
 .widget.ThemeCat-viescolaire.absences.collapsible .clickable#id_58_TitreText:hover { /*Couleur texte en-tête au Hover*/
   color: #A13213 !important;
 }
-
-/*Enseignements par matière*/
-.clickable.ie-ellipsis#id_62_TitreText { /*Texte "Enseignements par matière"*/
+.widget.ThemeCat-viescolaire.absences.collapsible .no-events p { /*Couleur texte "Aucune nouvel évènement"*/
   color: #A13213 !important;
 }
-.clickable.ie-ellipsis#id_62_TitreText:hover { /*Texte "Enseignements par matière"*/
+.content-container.overflow-auto#id_58id_10::after { /*Couleur dessin*/
+  color: #d25544 !important; 
+}
+
+/*Informations & Sondages*/
+.widget.ThemeCat-communication.actualites.collapsible .clickable#id_59_TitreText { /*Couleur texte en-tête*/
+  color: #049d65 !important;
+  font-weight: bold !important;
+}
+.widget.ThemeCat-communication.actualites.collapsible .clickable#id_59_TitreText:hover { /*Couleur texte en-tête au Hover*/
+  color: #005734 !important;
+}
+.widget.ThemeCat-communication.actualites .no-events p { /*Couleur texte "Aucune nouvelle information"*/
+  color: #005734 !important;
+}
+.content-container.overflow-auto#id_59id_10::after { /*Couleur dessin*/
+  color: #3ad9a1 !important; 
+}
+
+/*Enseignements par matière*/
+.clickable.ie-ellipsis#id_62_TitreText { /*Couleur texte en-tête*/
+  color: #A13213 !important;
+  font-weight: bold !important;
+}
+.clickable.ie-ellipsis#id_62_TitreText:hover { /*Couleur texte en-tête au Hover*/
   color: #ca4520 !important;
 }
 
+.ocb_cont.as-input.as-select.ie-ripple { /*Couleur bordure de "Année complète"*/
+  border: solid 1px #ca4520 !important; 
+}
 .ocb_cont.as-input.as-select.ie-ripple .ocb_bouton { /*Couleur icône à droite de "Année complète"*/
   color: #A13213 !important;
 }
@@ -368,7 +395,9 @@
   border-top: solid 1px var(--theme-claire-scalePlus60) !important;
 }
 
-/*Agenda fenêtre "Choisir un jour"*/
+/*
+|--- Agenda fenêtre "Choisir un jour" ---|
+*/
 .BloquerInterface.NePasImprimer.SansSelectionTexte.VoileOpaque50 { /*Blocage fond de fenêtre*/
   background: rgb(53, 53, 53) !important;
   backdrop-filter: blur(20px);
@@ -378,11 +407,28 @@
 .Fenetre_Cadre.ombre-cadre { /*Couleur de fond*/
   background-color: #140a0a !important; 
 }
+.ObjetFenetre_Espace .ombre-cadre { /*Couleur d'ombre*/
+  box-shadow: 0px 0px 18px 8px rgba(172, 172, 172, 0.101) !important;
+}
+
+.ZoneDeplacementFenetre.ie-draggable-handle[id^="IE.Identite.collection"] { /*Couleur texte en-tête*/
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
 
 .date.actif, .date { /*Couleur de fond & texte Calendrier*/
   background: #474747 !important;
   color: #ffffff !important;
   font-weight: bold !important;
+}
+
+.icon_angle_left.icon.btnImageIcon.btnImage, .icon_angle_right.icon.btnImageIcon.btnImage {/*Couleur icônes "Précédent" & "Suivant"*/
+  background-color: #ca4520 !important;
+  color: #ffffff !important;
+}
+.icon_angle_left.icon.btnImageIcon.btnImage:hover, .icon_angle_right.icon.btnImageIcon.btnImage:hover {/*Couleur icônes "Précédent" & "Suivant" au Hover*/
+  background-color: #A13213 !important;
+  color: #ffffff !important;
 }
 
 .date:hover [id^="IE.Identite.collection"] { /*Date au Hover*/
@@ -396,7 +442,7 @@
   color: #A13213 !important;
   font-weight: bold !important;
 }
-.date.actif.current-month.current-date.selected-date.b-left [id^="IE.Identite.collection"] > div > div { /*Couleur rond de la date active*/
+.date.actif.current-month.current-date.selected-date [id^="IE.Identite.collection"] > div > div { /*Couleur rond de la date active*/
   background-color: #ffffff !important;
 }
 
@@ -414,28 +460,16 @@
   color: #A13213 !important;
 }
 
-.cta-conteneur { /*Supprime le bouton "Fermer / X" inutile*/
+.Fenetre_Titre.NePasImprimer .cta-conteneur { /*Supprime le bouton "Fermer / X" inutile*/
   display: none !important; 
 }
 
 /*
 |--- Themes ---|
 */
-:root {
-  --theme-neutre-light: #151515 !important;
-}
-
-.ThemeVert,
-body:not(.ThemeAccessible) .ThemeProduitPN,
-body:not(.ThemeAccessible) .ThemePronote,
-body:not(.ThemeAccessible) .ThemeCat-communication {
-  --theme-claire-scalePlus80: #60d258 !important; /*Dessin Widget "Informations & Sondages"*/
-}
 
 .ThemeBleu, body:not(.ThemeAccessible) .ThemeProduitEDT,
 body:not(.ThemeAccessible) .ThemeEDT,
 body:not(.ThemeAccessible) .ThemeCat-viescolaire {
-  --theme-claire-scalePlus80: #A13213 !important; /*Dessin Widget "Assiduité"*/
-  --theme-foncee: #A13213 !important; /*Couleur texte "Assiduité"*/
-  --theme-moyen1: #ca4520 !important; /*Contour "Enseignements par matière"*/
+  --theme-moyen1: #151515 !important; /*Contours pointillets énervants au rafraîchissement de page*/
 }
