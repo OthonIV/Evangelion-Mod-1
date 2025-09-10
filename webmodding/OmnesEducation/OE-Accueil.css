@@ -286,22 +286,22 @@
   color: #ffffff !important;
 }
 
-.content-container.overflow-auto#id_64id_10::after { /*Couleur dessin*/
+.widget.ThemeCat-edt.edt.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #d25858 !important; 
 }
 
 /*Travail à faire*/
-.widget.ThemeCat-pedagogie.taf.collapsible .clickable#id_72_TitreText { /*Couleur texte en-tête*/
+.widget.ThemeCat-pedagogie.taf.collapsible .clickable { /*Couleur texte en-tête*/
   color: #e7901d !important;
   font-weight: bold !important;
 }
-.widget.ThemeCat-pedagogie.taf.collapsible .clickable#id_72_TitreText:hover { /*Couleur texte en-tête au Hover*/
+.widget.ThemeCat-pedagogie.taf.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
   color: #a06519 !important;
 }
 .widget.ThemeCat-pedagogie.taf.collapsible .no-events p { /*Couleur texte "Aucun travail à faire" du dessous*/
   color: #a06519 !important;
 }
-.content-container.overflow-auto#id_72id_10::after { /*Couleur dessin*/
+.widget.ThemeCat-pedagogie.taf.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #ffc77d !important; 
 }
 
@@ -316,56 +316,56 @@
 .widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .no-events p { /*Couleur texte "Aucune ressource pédagogique"*/
   color: #4a1b7f !important;
 }
-.content-container.overflow-auto#id_70id_10::after { /*Couleur dessin*/
+.widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #bb83ff !important;
 }
 
 /*Assiduité*/
-.widget.ThemeCat-viescolaire.absences.collapsible .clickable#id_58_TitreText { /*Couleur texte en-tête*/
+.widget.ThemeCat-viescolaire.absences.collapsible .clickable { /*Couleur texte en-tête*/
   color: #ca4520 !important;
   font-weight: bold !important;
 }
-.widget.ThemeCat-viescolaire.absences.collapsible .clickable#id_58_TitreText:hover { /*Couleur texte en-tête au Hover*/
+.widget.ThemeCat-viescolaire.absences.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
   color: #A13213 !important;
 }
 .widget.ThemeCat-viescolaire.absences.collapsible .no-events p { /*Couleur texte "Aucune nouvel évènement"*/
   color: #A13213 !important;
 }
-.content-container.overflow-auto#id_58id_10::after { /*Couleur dessin*/
+.widget.ThemeCat-viescolaire.absences.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #d25544 !important; 
 }
 
 /*Informations & Sondages*/
-.widget.ThemeCat-communication.actualites.collapsible .clickable#id_59_TitreText { /*Couleur texte en-tête*/
+.widget.ThemeCat-communication.actualites.collapsible .clickable { /*Couleur texte en-tête*/
   color: #049d65 !important;
   font-weight: bold !important;
 }
-.widget.ThemeCat-communication.actualites.collapsible .clickable#id_59_TitreText:hover { /*Couleur texte en-tête au Hover*/
+.widget.ThemeCat-communication.actualites.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
   color: #005734 !important;
 }
-.widget.ThemeCat-communication.actualites .no-events p { /*Couleur texte "Aucune nouvelle information"*/
+.widget.ThemeCat-communication.actualites.collapsible .no-events p { /*Couleur texte "Aucune nouvelle information"*/
   color: #005734 !important;
 }
-.content-container.overflow-auto#id_59id_10::after { /*Couleur dessin*/
+.widget.ThemeCat-communication.actualites.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #3ad9a1 !important; 
 }
 
 /*Enseignements par matière*/
-.clickable.ie-ellipsis#id_62_TitreText { /*Couleur texte en-tête*/
-  color: #A13213 !important;
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .clickable.ie-ellipsis { /*Couleur texte en-tête*/
+  color: #ca4520 !important;
   font-weight: bold !important;
 }
-.clickable.ie-ellipsis#id_62_TitreText:hover { /*Couleur texte en-tête au Hover*/
-  color: #ca4520 !important;
-}
-
-.ocb_cont.as-input.as-select.ie-ripple { /*Couleur bordure de "Année complète"*/
-  border: solid 1px #ca4520 !important; 
-}
-.ocb_cont.as-input.as-select.ie-ripple .ocb_bouton { /*Couleur icône à droite de "Année complète"*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .clickable.ie-ellipsis:hover { /*Couleur texte en-tête au Hover*/
   color: #A13213 !important;
 }
-.ocb_cont.as-input.as-select.ie-ripple .ocb_bouton:hover{ /*Couleur icône à droite de "Année complète" au Hover*/
+
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ocb_cont.as-input.as-select.ie-ripple { /*Couleur bordure de "Année complète"*/
+  border: solid 1px #ca4520 !important; 
+}
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ocb_cont.as-input.as-select.ie-ripple .ocb_bouton { /*Couleur icône à droite de "Année complète"*/
+  color: #A13213 !important;
+}
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ocb_cont.as-input.as-select.ie-ripple .ocb_bouton:hover{ /*Couleur icône à droite de "Année complète" au Hover*/
   color: #882d14 !important;
 }
 
@@ -391,13 +391,19 @@
   color: #d3d3d3 !important;
 }
 
-.liste-matieres li:first-child { /*Bug barre du dessus 1er élément TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST*/
-  border-top: solid 1px var(--theme-claire-scalePlus60) !important;
+.liste-matieres li { /*Couleur bordures au dessus des matières*/
+  border-top: solid 1px #ca4520 !important;
+}
+
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
+  color: #A13213 !important; 
 }
 
 /*
-|--- Agenda fenêtre "Choisir un jour" ---|
+|--- Agenda fenêtres ---|
 */
+
+/*Fenêtre "Choisir un jour"*/
 .BloquerInterface.NePasImprimer.SansSelectionTexte.VoileOpaque50 { /*Blocage fond de fenêtre*/
   background: rgb(53, 53, 53) !important;
   backdrop-filter: blur(20px);
@@ -462,6 +468,11 @@
 
 .Fenetre_Titre.NePasImprimer .cta-conteneur { /*Supprime le bouton "Fermer / X" inutile*/
   display: none !important; 
+}
+
+/*Fenêtre "Détail du jour"*/
+.Fenetre_Cadre.ombre-cadre { /*Couleur de fond */
+  background-color: #140a0a !important;
 }
 
 /*

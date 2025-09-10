@@ -113,7 +113,8 @@
                 {
                     "css":
                     [
-                        "webmodding/OmnesEducation.css"
+                        "webmodding/OmnesEducation/OE-Accueil.css",
+                        "webmodding/OmnesEducation/OE-Cours.css"
                     ],
                     "matches":
                     [
