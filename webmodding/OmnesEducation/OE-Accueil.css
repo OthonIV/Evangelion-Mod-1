@@ -474,6 +474,13 @@
 .Fenetre_Cadre.ombre-cadre { /*Couleur de fond */
   background-color: #140a0a !important;
 }
+.DivBloc.MargeGaucheBloc { /*Couleur de fond du contenu*/
+  background-color: #1F1C1D !important; 
+}
+.UtilitaireBloc_itemInverse > div, .EspaceHaut { /*Couleur texte*/
+  color: #d3d3d3 !important;
+}
+
 
 /*
 |--- Themes ---|
