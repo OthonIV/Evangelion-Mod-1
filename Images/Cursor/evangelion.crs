@@ -1,0 +1,18 @@
+﻿[IBeam]
+Path=Unit MPE [small](normal select).cur
+
+[Arrow]
+Path=Unit 01 [small](normal select).cur
+
+[Help]
+Path=Unit 02 [small](normal select).cur
+
+[AppStarting]
+Path=Unit 00 A [small](normal select).cur
+
+[Wait]
+Path=Unit 00 B [small](normal select).cur
+
+[Crosshair]
+Path=Unit 03 [small](normal select).cur
+

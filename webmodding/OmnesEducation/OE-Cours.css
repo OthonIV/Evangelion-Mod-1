@@ -1,0 +1,30 @@
+/*
+|-- 3eme Bandeau --|
+*/
+.objetBandeauEntete_thirdmenu { /*Couleur de fond*/
+    background-color: #151515 !important;
+}
+
+.objetBandeauEntete_thirdmenu .titre-onglet { /*Couleur texte "En grille/liste/planning"*/
+    color: #c91b21 !important;
+}
+
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_cont.as-input.as-select.ie-ripple:hover { /*Couleur bordure du nom au Hover*/
+    border-color: #c91b21 !important;
+}
+
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton { /*Couleur icône à droite du nom*/
+    color: #c91b21 !important;
+}
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton:hover { /*Couleur icône à droite du nom au Hover*/
+    color: #882d14 !important;
+}
+
+.objetBandeauEntete_thirdmenu .bt-activable.icon_cog.btnImage { /*Couleur icône paramètres*/
+    background-color: #dd6f59 !important; 
+    color: #151515 !important;
+}
+.objetBandeauEntete_thirdmenu .bt-activable.icon_cog.btnImage:hover { /*Couleur icône paramètres au Hover*/
+    background-color: transparent !important; 
+    color: #dd6f59 !important;
+}
