@@ -260,3 +260,6 @@
 /*
 |--- Curseur ---|
 */
+* {
+  cursor: url("https://github.com/OthonIV/Evangelion-Mod-1/raw/main/Images/Cursor/Unit%2002%20%5Bnum%5D%20(normal%20select).cur"), default !important;
+}

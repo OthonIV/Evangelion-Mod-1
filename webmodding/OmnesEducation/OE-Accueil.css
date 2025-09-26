@@ -103,6 +103,18 @@
   color: #ca4520 !important;
   font-weight: bold !important;
 }
+.widget.ThemeCat-viescolaire.absences.collapsible .icon.icon_absences:hover { /*Couleur fond absence au Hover*/
+  background-color: #ca452060 !important;
+}
+.widget.ThemeCat-viescolaire.absences.collapsible h4 { /*Couleur texte "Absences"*/
+  color: #ffffff !important;
+}
+.widget.ThemeCat-viescolaire.absences.collapsible .date { /*Couleur texte dates des absences*/
+  background-color: #5a5a5a60 !important;
+}
+.widget.ThemeCat-viescolaire.absences.collapsible .icon.icon_absences::before { /*Couleur icône gauche absence*/
+  color: #d25544 !important;
+}
 .widget.ThemeCat-viescolaire.absences.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
   color: #A13213 !important;
 }
