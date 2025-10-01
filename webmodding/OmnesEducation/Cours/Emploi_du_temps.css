@@ -1,0 +1,91 @@
+/*
+|--- 3eme Bandeau ---|
+*/
+.objetBandeauEntete_thirdmenu { /*Couleur de fond*/
+    background-color: #151515 !important;
+}
+
+.objetBandeauEntete_thirdmenu .titre-onglet { /*Couleur texte "En grille/liste/planning"*/
+    color: #ffffff !important;
+}
+
+.objetBandeauEntete_thirdmenu .bt-activable.icon_cog.btnImage { /*Couleur icône paramètres*/
+    background-color: #dd6f59 !important; 
+    color: #151515 !important;
+}
+.objetBandeauEntete_thirdmenu .bt-activable.icon_cog.btnImage:hover { /*Couleur icône paramètres au Hover*/
+    background-color: transparent !important; 
+    color: #dd6f59 !important;
+}
+
+/*Menu nom*/
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_cont.as-input.as-select.ie-ripple:hover { /*Couleur bordure du nom au Hover*/
+    border-color: #c91b21 !important;
+}
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton { /*Couleur icône à droite du nom*/
+    color: #c91b21 !important;
+}
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton:hover { /*Couleur icône à droite du nom au Hover*/
+    color: #882d14 !important;
+}
+
+.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .deroulant-conteneur-show-hide { /*Couleurs menu déroulant*/
+  background: rgba(40, 40, 40, 0.5) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .as-li.c_1.selected { /*Couleurs de l'élément au Hover*/
+  background: rgba(216, 216, 216, 0.5) !important;
+}
+
+/*
+|--- 4eme Bandeau ---|
+*/
+/*Gauche*/
+.calendrier.hide .ocb_cont.as-input.as-select.ie-ripple { /*Bordure type calendrier*/
+  border-color: #c91b21 !important;
+}
+.calendrier.hide .input-wrapper .ocb_bouton { /*Couleur icône à droite du type*/
+    color: #c91b21 !important;
+}
+.calendrier.hide .input-wrapper .ocb_bouton:hover { /*Couleur icône à droite du type au Hover*/
+    color: #882d14 !important;
+}
+
+/*Jours*/
+.calendrier.hide .ie-draggable-handle.tableJours {
+    background-color: #ffffff !important; /*Couleur de fond*/
+    border: black;
+}
+.calendrier.hide .Calendrier_Jour_td { /*Couleur des jours*/
+    border-color: #ffffff !important;
+}
+.calendrier.hide .calendrier-jour.ie-draggable-handle { /*Couleur du jour sélectionné*/
+    background: linear-gradient(135deg, #991c20,#121212, #991c20) !important;
+    color: #ffffff !important;
+}
+.calendrier.hide .calendrier-jour-domaine { /*Couleur petit carré du dessous*/
+    background-color: #151515 !important;
+    border-top: #ffffff !important;
+}
+/*Mois*/
+.calendrier.hide .tableMois, .calendrier.hide .Texte10.Gras.FondBlanc.Calendrier_Mois { /*Couleur mois*/
+    border-color: #ffffff !important;
+    background-color: #151515 !important;
+    color: #ffffff !important;
+}
+
+/*
+|--- Calendrier ---|
+*/
+
+.interface_affV_client { /*Couleur de fond*/
+  background: linear-gradient(135deg, #5c181a,#121212, #991c20) !important;
+}
+
+.grille .InlineBlock.WhiteSpaceNormal.AlignementMilieuVertical.AlignementMilieu { /*Couleur texte jours*/
+  color: #ffffff !important;
+}
+.grille .AlignementDroit.PetitEspaceDroit { /*Couleur texte heures*/
+  color: #ffffff !important;
+}

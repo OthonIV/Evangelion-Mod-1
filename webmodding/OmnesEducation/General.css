@@ -167,7 +167,7 @@
   border-color: #fcb501 !important; /*Couleur de la bandelette*/
 }
 
-.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau:hover {
+.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau:hover { /*Couleurs de l'élément au Hover*/
   background-color: #282828 !important;
   border-radius: 4px !important;
   border-color: #fcb501 !important; /*Couleur de la bandelette*/
