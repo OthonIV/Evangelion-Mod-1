@@ -211,7 +211,7 @@
 /*
 |--- Corps de page ---|
 */
-[tabindex="-1"].AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_ { /*Svg de fond*/
+[tabindex="-1"].AffichagePageAccueil.etudiants { /*Svg de fond*/
   position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
   width: 200vh;
   height: 200vh;
@@ -224,7 +224,7 @@
 }
 
 
-[tabindex="-1"].AffichagePageAccueil.etudiants#GInterface\.Instances\[1\]_defaut_::before { /*Gradient*/
+[tabindex="-1"].AffichagePageAccueil.etudiants::before { /*Gradient*/
   content: "";
   position: absolute;
   top: 0;

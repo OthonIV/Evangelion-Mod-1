@@ -1,4 +1,52 @@
 /*
+|--- Fond ---|
+*/
+.ObjetInterfaceEspaceEdT { /*Svg de fond*/
+  position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
+  width: 200vh;
+  height: 200vh;
+  background-color: #151515 !important;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: relative;
+  z-index: 1;
+}
+
+
+.ObjetInterfaceEspaceEdT::before { /*Gradient*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    65deg,
+    #ffaa00, #ff0000
+  );
+  animation: aniGradient 12s linear infinite;
+  background-size: 500%;
+
+  opacity: 1;
+  z-index: 0;
+
+  /* Masque SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: relative;
+}
+
+/* Animation du gradient */
+@keyframes aniGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/*
 |--- 3eme Bandeau ---|
 */
 .objetBandeauEntete_thirdmenu { /*Couleur de fond*/
@@ -78,9 +126,14 @@
 /*
 |--- Calendrier ---|
 */
-
-.interface_affV_client { /*Couleur de fond*/
-  background: linear-gradient(135deg, #5c181a,#121212, #991c20) !important;
+.corpsGrille * {
+  background-color: transparent;
+}
+.grille [id$="quadrillage"] { /*Couleur fond*/
+  background: transparent !important;
+}
+.grille [id$="fond"] { /*Couleur fond*/
+  background: transparent !important;
 }
 
 .grille .InlineBlock.WhiteSpaceNormal.AlignementMilieuVertical.AlignementMilieu { /*Couleur texte jours*/
