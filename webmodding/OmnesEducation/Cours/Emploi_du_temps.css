@@ -100,6 +100,15 @@
     color: #882d14 !important;
 }
 
+.calendrier.hide .deroulant-conteneur-show-hide { /*Couleurs menu déroulant*/
+  background: rgba(40, 40, 40, 0.5) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.calendrier.hide .deroulant-conteneur-show-hide .as-li.c_1.selected { /*Couleurs de l'élément au Hover*/
+  background: rgba(216, 216, 216, 0.5) !important;
+}
+
 /*Jours*/
 .calendrier.hide .ie-draggable-handle.tableJours {
     background-color: #ffffff !important; /*Couleur de fond*/
