@@ -109,7 +109,8 @@
     border-color: #ffffff !important;
 }
 .calendrier.hide .calendrier-jour.ie-draggable-handle { /*Couleur du jour sélectionné*/
-    background: linear-gradient(135deg, #991c20,#121212, #991c20) !important;
+    background: #991c20 !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px inset !important;
     color: #ffffff !important;
 }
 .calendrier.hide .calendrier-jour-domaine { /*Couleur petit carré du dessous*/
@@ -126,16 +127,6 @@
 /*
 |--- Calendrier ---|
 */
-.corpsGrille * {
-  background-color: transparent;
-}
-.grille [id$="quadrillage"] { /*Couleur fond*/
-  background: transparent !important;
-}
-.grille [id$="fond"] { /*Couleur fond*/
-  background: transparent !important;
-}
-
 .grille .InlineBlock.WhiteSpaceNormal.AlignementMilieuVertical.AlignementMilieu { /*Couleur texte jours*/
   color: #ffffff !important;
 }

@@ -4,3 +4,14 @@
 .objetBandeauEntete_thirdmenu .Gras { /*Couleur texte "du" , "au"*/
   color: #ffffff !important;
 }
+
+/*
+|--- Tableau ---|
+*/
+.AvecMain * { /*Couleur fond tableau*/
+  background-color: #140a0aed !important; 
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
+  color: #d3d3d3 !important;
+}
