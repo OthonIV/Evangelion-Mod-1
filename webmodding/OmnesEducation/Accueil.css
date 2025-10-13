@@ -60,7 +60,15 @@
   color: #ffffff !important;
 }
 .icon_contenu_cours.avecFond.btnImage:hover { /*Couleur icône "Contenu Pédagogique" au Hover*/
-  background-color: #882d14 !important;
+  background-color: #a0161a !important;
+  color: #ffffff !important;
+}
+.icon_post_it_rempli.avecFond.btnImage { /*Couleur icône "Mémo du cours"*/
+  background-color: #c91b21 !important;
+  color: #ffffff !important;
+}
+.icon_post_it_rempli.avecFond.btnImage:hover { /*Couleur icône "Mémo du cours" au Hover*/
+  background-color: #a0161a !important;
   color: #ffffff !important;
 }
 

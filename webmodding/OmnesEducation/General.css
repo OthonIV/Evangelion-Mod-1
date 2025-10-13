@@ -59,12 +59,23 @@
 }
 
 /*Couleur Icônes: QR Code & Off*/
-.icon_qr_code {
+.ObjetBandeauEspace .icon_qr_code, .ObjetBandeauEspace .icon_off {
   color: #F04A1A !important;
 }
-.icon_off {
-  color: #F04A1A !important;
-}
+/*Fenêtre QR Code*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Qualité Logo Hyperplanning*/
 .ibe_logo_image { /*Supprimer le logo Hyperplanning par défaut*/

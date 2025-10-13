@@ -56,6 +56,22 @@
 .objetBandeauEntete_thirdmenu .titre-onglet { /*Couleur texte "En grille/liste/planning"*/
     color: #ffffff !important;
 }
+/*Icônes*/
+.filtres-conteneur .icon_fiche_T.mix-icon_link.bt-activable.btnImage { /*Couleur icône "Afficher les cours des autres promotions/TD/Options liés aux TD/Options affichés"*/
+    background-color: #ddb559 !important; 
+    color: #151515 !important;
+}
+.filtres-conteneur .icon_fiche_T.mix-icon_link.bt-activable.btnImage {
+  text-shadow:-1px 0 #ddb559, 0 1px #dd9059, 1px 0 #dd6f59, 0 -1px #df644b !important;
+}
+.filtres-conteneur .icon_afficher_cours_TD_plus_TD.bt-activable.btnImage { /*Couleur icône "Afficher les cours des TD/options liés au sein de la promotion"*/
+    background-color: #dd9059 !important; 
+    color: #151515 !important;
+}
+.filtres-conteneur .icon_afficher_cours_TD_plus_promo.bt-activable.btnImage {
+    background-color: #dd6f59 !important; 
+    color: #151515 !important;
+}
 
 .objetBandeauEntete_thirdmenu .bt-activable.icon_cog.btnImage { /*Couleur icône paramètres*/
     background-color: #dd6f59 !important; 
