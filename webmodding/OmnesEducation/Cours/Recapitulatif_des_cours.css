@@ -24,7 +24,7 @@
   color: #d3d3d3 !important;
 }
 
-.full-height .full-width * {
+.full-height .full-width * { /*Couleur fond sous sections du tableau*/
   background-color: #392727ed !important; 
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(6px);
