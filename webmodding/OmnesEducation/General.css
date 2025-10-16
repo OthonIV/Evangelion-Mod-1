@@ -62,20 +62,34 @@
 .ObjetBandeauEspace .icon_qr_code, .ObjetBandeauEspace .icon_off {
   color: #F04A1A !important;
 }
+
+/*Fenêtre de génération de QR Code*/
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .AvecMove.ie-draggable-handle { /*Couleur texte haut*/
+  color: #ffffff !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .m-bottom-xl * { /*Couleur texte*/
+  color: #ffffff !important;
+}
+
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage { /*Couleurs bouton*/
+  background: linear-gradient(90deg, #FCD801, #F04A1A) !important;
+  border-color: #ffffff !important;
+  color: #151515 !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover { /*Couleurs bouton au Hover*/
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte-small { /*Couleur texte "Accès au site mobile depuis un navigateur"*/
+  color: #ffffff !important;
+}
 /*Fenêtre QR Code*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte * { /*Couleur texte*/
+  color: #ffffff !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte [style*="text-align: center"][style*="margin: 0px auto"][style*="background-color: rgb(255, 255, 255)"] { /*Couleur autour du QR Code*/
+  background: none !important;
+}
 
 /*Qualité Logo Hyperplanning*/
 .ibe_logo_image { /*Supprimer le logo Hyperplanning par défaut*/
@@ -265,6 +279,16 @@
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/*
+|--- Couleur liens ---|
+*/
+href, a { /*Couleur liens*/
+  color: #FCD801 !important;
+}
+href:hover, a:hover { /*Couleur liens au Hover*/
+  color: #ffaa00 !important;
 }
 
 
