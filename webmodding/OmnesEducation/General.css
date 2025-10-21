@@ -1,21 +1,101 @@
 /*
-|--- Bannière ---|
+I) Bannière
+  1) Général
+    - Ajouts ennuyeux au rafraîchissement de page
+    - Couleur Bannière
+  2) Éléments de la bannière
+    A) Logo Omnes Education --> EvangelionLogo2
+      - Supprimer le logo Omnes Education
+      - Ajouter le logo Evangelion
+    B) Photo de profil --> Shinji pdp
+      - Supprimer la photo de profil par défaut
+      - Ajouter la photo de profil Shinji
+    C) Couleur Texte Bannière
+      - Nom de l'établissement
+      - Nom de l'utilisateur
+    D) Couleur Icônes: QR Code & Off
+    E) Qualité Logo Hyperplanning
+      - Supprimer le logo Hyperplanning par défaut
+      - Ajouter le logo Hyperplanning de meilleure qualité + Gradient
+  3) Fenêtres QR Code
+    A) Fenêtre de génération de QR Code
+      - Couleur fenêtre
+      - Couleur texte entête
+      - Couleur texte
+      - Couleur bouton
+      - Couleur bouton au Hover
+      - Couleur texte "Accès au site mobile depuis un navigateur"
+    B) Fenêtre QR Code
+      - Couleur texte
+      - Couleur autour du QR Code
+II) Bandeau Entete Menu
+  1) Couleur bandeau
+    - Couleur du bandeau
+    - Couleur du bandeau derrière un élément sélectionné
+  2) Éléments du menu
+    - Gradient sur l'élément du menu sélectionné
+    - Gradient sur l'élément du menu au passage du curseur
+    A) Menu déroulant
+      - Menu déroulant transparent
+      - Éléments du Menu déroulant au passage du curseur
+      - Couleur texte
+  3) Icônes bandeau entête menu
+    - Couleur texte compteur d'"Aide"
+
+III) Bandeau Entete Second Menu
+  - Couleur du bandeau
+  1) Éléments du second menu
+    - Couleur de l'élément sélectionné
+    - Couleur de l'élément sélectionné au Hover
+    - Couleur de l'élément non sélectionné au Hover
+    A) Menu déroulant
+      - Menu déroulant transparent
+      - Éléments du Menu déroulant au passage du curseur
+      - Couleur texte
+  2) Icones
+    - Couleur icône sauvegarder
+    - Couleur icône .ical
+    - Couleur icône imprimer
+    - Couleur icône PDF
+
+IV) Corps de page
+  - Svg de fond
+  - Gradient
+    - Masque SVG
+  - Animation du gradient
+
+V) Communs à toutes les pages
+  - Couleur liens
+  - Couleur liens au Hover
+  1) Couleur boutons Fermer / X
+    - Bouton Fermer
+    - Bouton Fermer au Hover
+    - Couleur Bouton X
+    - Couleur Bouton X au Hover
+
+VI) Curseur
+  - Curseur EVA 02
 */
+
+
+
+/*
+I) Bannière
+*/
+/*I) 1) Général*/
+.ObjetBandeauEspace .evitement { /*Ajouts ennuyeux au rafraîchissement de page*/
+  display: none !important;
+}
 .ObjetBandeauEspace { /*Couleur Bannière*/
   background-color: #151515 !important;
   align-items: flex-start !important;
   padding-bottom: 53px;
 }
-
-.ObjetBandeauEspace .evitement { /*Ajouts ennuyeux au rafraîchissement de page*/
-  display: none !important;
-}
-
-/*Logo Omnes Education --> EvangelionLogo2*/
+/*I) 2) Éléments de la bannière*/
+/*I) 2) A) Logo Omnes Education --> EvangelionLogo2*/
 .ibe_image_etab img { /*Supprimer le logo Omnes Education*/
   display :none !important;
 }
-
 .ibe_image_etab { /*Ajouter le logo Evangelion*/
   margin-left: 5px;
   margin-top: 10px;
@@ -29,11 +109,10 @@
   z-index: 1;
 }
 
-/*Photo de profil --> Shinji pdp*/
+/*I) 2) B) Photo de profil --> Shinji pdp*/
 .ibe_util_photo img { /*Supprimer la photo de profil par défaut*/
   display: none !important;
 }
-
 .ibe_util_photo { /*Ajouter la photo de profil Shinji*/
   background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/Shinji%20pdp.jpg");
   background-size: contain !important;
@@ -43,7 +122,7 @@
   border: 1px solid #FCD801 !important;
 }
 
-/*Couleur Texte Bannière*/
+/*I) 2) C) Couleur Texte Bannière*/
 .ibe_etab { /*Nom de l'établissement*/
   font-weight: bold;
   background: linear-gradient(90deg, #FCD801,#F04A1A);
@@ -58,40 +137,12 @@
   color: transparent;
 }
 
-/*Couleur Icônes: QR Code & Off*/
+/*I) 2) D) Couleur Icônes: QR Code & Off*/
 .ObjetBandeauEspace .icon_qr_code, .ObjetBandeauEspace .icon_off {
   color: #F04A1A !important;
 }
 
-/*Fenêtre de génération de QR Code*/
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .AvecMove.ie-draggable-handle { /*Couleur texte haut*/
-  color: #ffffff !important;
-}
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .m-bottom-xl * { /*Couleur texte*/
-  color: #ffffff !important;
-}
-
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage { /*Couleurs bouton*/
-  background: linear-gradient(90deg, #FCD801, #F04A1A) !important;
-  border-color: #ffffff !important;
-  color: #151515 !important;
-}
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover { /*Couleurs bouton au Hover*/
-  border-color: #ffffff !important;
-  border-width: 2px !important;
-}
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte-small { /*Couleur texte "Accès au site mobile depuis un navigateur"*/
-  color: #ffffff !important;
-}
-/*Fenêtre QR Code*/
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte * { /*Couleur texte*/
-  color: #ffffff !important;
-}
-.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte [style*="text-align: center"][style*="margin: 0px auto"][style*="background-color: rgb(255, 255, 255)"] { /*Couleur autour du QR Code*/
-  background: none !important;
-}
-
-/*Qualité Logo Hyperplanning*/
+/*I) 2) E) Qualité Logo Hyperplanning*/
 .ibe_logo_image { /*Supprimer le logo Hyperplanning par défaut*/
   background-image: none !important;
 }
@@ -108,19 +159,55 @@
   mask-position: center;
 }
 
+/*I) 3) Fenêtres QR Code */
+/*I) 3) A) Fenêtre de génération de QR Code*/
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .Fenetre_Cadre.ombre-cadre { /*Couleur fenêtre*/
+  background-color: #140a0af3 !important; /*Couleur de fond*/
+  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important; /*Couleur d'ombre*/
+}
+
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .AvecMove.ie-draggable-handle { /*Couleur texte entête*/
+  color: #ffffff !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .m-bottom-xl * { /*Couleur texte*/
+  color: #ffffff !important;
+}
+
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage { /*Couleur bouton*/
+  background: linear-gradient(90deg, #FCD801, #F04A1A) !important;
+  border-color: #ffffff !important;
+  color: #151515 !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover { /*Couleur bouton au Hover*/
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+}
+
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte-small { /*Couleur texte "Accès au site mobile depuis un navigateur"*/
+  color: #ffffff !important;
+}
+
+/*I) 3) B) Fenêtre QR Code*/
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte * { /*Couleur texte*/
+  color: #ffffff !important;
+}
+.ObjetFenetre_Espace.ObjetFicheAppliMobile_racine .ie-texte [style*="text-align: center"][style*="margin: 0px auto"][style*="background-color: rgb(255, 255, 255)"] { /*Couleur autour du QR Code*/
+  background: none !important;
+}
+
 
 /*
-|--- Bandeau Entete Menu ---|
+II) Bandeau Entete Menu
 */
+/*II) 1) Couleur bandeau*/
 .objetBandeauEntete_menu { /*Couleur du bandeau*/
   background-color: #0e0e0e !important;
 }
-
-.item-menu_niveau0.focused-in, .item-menu_niveau0.item-selected { /*Couleur du bandeau sélectionné*/
+.item-menu_niveau0.focused-in, .item-menu_niveau0.item-selected { /*Couleur du bandeau derrière un élément sélectionné*/
   background: #0e0e0e !important;
 }
 
-/*Éléments du menu*/
+/*II) 2) Éléments*/
 .item-menu_niveau0.item-selected .label-menu_niveau0 { /*Gradient sur l'élément du menu sélectionné*/
   background: linear-gradient(65deg, #f1ea22, #e64be1, #f24c4c, #e7901d, #d431ed);
   background-size: 400% 400%;
@@ -141,7 +228,7 @@
   color: #ffffff !important;
 }
 
-/*Menu déroulant*/
+/*II) 2.1) Menu déroulant*/
 .submenu-wrapper { /*Menu déroulant transparent*/
   background: rgba(255, 255, 255, 0.12) !important;
   backdrop-filter: blur(6px);
@@ -158,7 +245,7 @@
   color: #ffffff !important;
 }
 
-/*Icones bandeau entete menu*/
+/*II) 3) Icones bandeau entete menu*/
 .bcne_compteur_aide { /*Couleur texte compteur d'"Aide"*/
   color: #a9161b !important;
   border: 1px solid #a9161b !important;
@@ -166,14 +253,14 @@
 
 
 /*
-|--- Bandeau Entete Second Menu ---|
+III) Bandeau Entete Second Menu
 */
 .objetBandeauEntete_secondmenu { /*Couleur du bandeau*/
   background-color: #1f1d1c !important;
 }
 
-/*Éléments du second menu*/
-.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau.selected { /*Couleurs de l'élément sélectionné*/
+/*III) 1) Éléments du second menu*/
+.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau.selected { /*Couleur de l'élément sélectionné*/
   background: linear-gradient(65deg, #f1ea22, #e64be1, #f24c4c, #e7901d, #d431ed);
   background-size: 400% 400%;
   animation: aniGradient 8s ease-in-out infinite;
@@ -186,24 +273,24 @@
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau.selected:hover{ /*Couleurs de l'élément sélectionné au Hover*/
+.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau.selected:hover{ /*Couleur de l'élément sélectionné au Hover*/
   border-radius: 4px;
   border-left: #fcb501 4px solid !important; /*Couleur de la bandelette*/
   border-color: #fcb501 !important; /*Couleur de la bandelette*/
 }
 
-.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau:hover { /*Couleurs de l'élément au Hover*/
+.objetBandeauEntete_secondmenu .item-menu_niveau1.menuitem-niveau:hover { /*Couleur de l'élément non sélectionné au Hover*/
   background-color: #282828 !important;
   border-radius: 4px !important;
   border-color: #fcb501 !important; /*Couleur de la bandelette*/
 }
 
-.label-menu-container::after { /*Couleur petite icone plus*/
+.label-menu-container::after { /*Couleur petite icone plus "v"*/
   color: #ffffff !important;
   padding: 0.11rem 0.8rem !important;
 }
 
-/*Second menu déroulant*/
+/*III) 1) A) Menu déroulant*/
 .menu-principal_niveau2 { /*Menu déroulant transparent*/
   background: rgba(255, 255, 255, 0.12) !important;
   backdrop-filter: blur(6px);
@@ -219,7 +306,7 @@
   color: #ffffff !important;
 }
 
-/*Icones*/
+/*III) 2) Icones*/
 .icon_disquette_pleine.btn-bandeau.btnImageDisable.btnImage { /*Couleur icône sauvegarder*/
   color: #ddb559 !important;
 }
@@ -234,7 +321,7 @@
 }
 
 /*
-|--- Corps de page ---|
+IV) Corps de page
 */
 [tabindex="-1"].AffichagePageAccueil.etudiants { /*Svg de fond*/
   position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
@@ -247,7 +334,6 @@
   background-position: relative;
   z-index: 1;
 }
-
 
 [tabindex="-1"].AffichagePageAccueil.etudiants::before { /*Gradient*/
   content: "";
@@ -274,15 +360,15 @@
   mask-position: relative;
 }
 
-/* Animation du gradient */
-@keyframes aniGradient {
+@keyframes aniGradient { /*Animation du gradient*/
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
+
 /*
-|--- Couleur liens ---|
+V) Communs à toutes les pages
 */
 href, a { /*Couleur liens*/
   color: #FCD801 !important;
@@ -291,10 +377,39 @@ href:hover, a:hover { /*Couleur liens au Hover*/
   color: #ffaa00 !important;
 }
 
+/*V) 1) Couleur boutons Fermer / X */
+.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage { /*Bouton Fermer*/
+  background-color: #A13213 !important;
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+  color: #ffffff !important;
+}
+.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover { /*Bouton Fermer au Hover*/
+  background-color: #ffffff !important;
+  background-position: center !important;
+  border-color: #A13213 !important;
+  border-width: 2px !important;
+  color: #A13213 !important;
+}
+
+.btnImageIcon.as-button.icon_fermeture_widget.btnImage { /*Couleur Bouton X*/
+  background-color: #A13213 !important;
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+  color: #ffffff !important;
+}
+.btnImageIcon.as-button.icon_fermeture_widget.btnImage:hover { /*Couleur Bouton X au Hover*/
+  background-color: #ffffff !important;
+  background-position: center !important;
+  border-color: #A13213 !important;
+  border-width: 2px !important;
+  color: #A13213 !important;
+}
+
 
 /*
-|--- Curseur ---|
+VI) Curseur
 */
-* {
+* { /*Curseur EVA 02*/
   cursor: url("https://github.com/OthonIV/Evangelion-Mod-1/raw/main/Images/Cursor/Unit%2002%20%5Bnum%5D%20(normal%20select).cur"), default !important;
 }

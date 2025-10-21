@@ -1,6 +1,92 @@
 /*
-|--- Widgets ---|
+I) Widgets
+  1) Général
+    - Couleur de fond des widgets
+    - Couleur icône "tout voir"
+    - Couleur icône "tout voir" au Hover
+  2) Agenda
+    - Couleur texte du jour dans l'agenda
+    - Couleur icône "Suivant"
+    - Couleur icône "Suivant" au hover
+    - Bordure du jour
+    - Couleur petite icône calendrier
+    - Couleur petite icône calendrier au Hover
+    - Couleur texte Semaine
+    - Fond de l'heure en cours relevé
+    - Couleur dessin
+    A) Contenu pédagogique
+      - Couleur icône "Contenu Pédagogique"
+      - Couleur icône "Contenu Pédagogique" au Hover
+      - Couleur icône "Mémo du cours"
+      - Couleur icône "Mémo du cours" au Hover
+  3) Travail à faire
+    - Couleur texte en-tête
+    - Couleur texte en-tête au Hover
+    - Couleur texte "Aucun travail à faire"
+    - Couleur dessin
+  4) Dernières ressources pédagogiques
+    - Couleur texte en-tête
+    - Couleur texte en-tête au Hover
+    - Couleur texte "Aucune ressource pédagogique"
+    - Couleur dessin
+  5) Assiduité
+    - Couleur texte en-tête
+    - Couleur texte en-tête au Hover
+    - Couleur fond absence au Hover
+    - Couleur texte "Absences"
+    - Couleur texte dates des absences
+    - Couleur dessin gauche absence
+    - Couleur texte "Aucun nouvel évènement"
+    - Couleur dessin
+  6) Informations & Sondages
+    - Couleur texte en-tête
+    - Couleur texte en-tête au Hover
+    - Couleur texte "Aucune nouvelle information"
+    - Couleur dessin
+  7) Enseignements par matières
+    - Couleur texte en-tête
+    - Couleur texte en-tête au Hover
+    - Couleur bordure de "Année complète"
+    - Couleur icône à droite de "Année complète"
+    - Couleur icône à droite de "Année complète" au Hover
+    A) Progression des cours
+      - Couleur du cercle de progression inachevé
+      - Couleur cercle de progression achevé
+      - Couleur bordure du cercle de progression
+      - Couleur intérieure du cercle de progression
+      - Couleur textes heures totales de cours
+      - Couleur bordures au dessus des matières
+      - Couleur dessin
+II) Agenda fenêtres
+  1) Fenêtre "Choisir un jour"
+    - Blocage fond de fenêtre
+    - Couleur de fond et d'ombre
+    - Couleur texte en-tête
+    - Couleur de fond & texte Calendrier
+    - Couleur icônes "Précédent" & "Suivant"
+    - Couleur icônes "Précédent" & "Suivant" au Hover
+    - Date au Hover
+    - Couleur bordure & texte de la date active
+    - Couleur rond de la date active
+    - Supprime le bouton "Fermer / X" inutile
+  2) Fenêtre "Contenu(s) pédagogique(s)"
+    - Couleur de fond et d'ombre
+    - Couleur de fond du contenu
+    - Couleur texte
+  3) Fenêtre "Mémo du cours"
+    - Couleur de fond et d'ombre
+    - Couleur texte en-tête
+    - Couleur texte
+III) Thèmes
+    - Contours pointillets énervants au rafraîchissement de page
 */
+
+
+
+/*
+I) Widgets
+*/
+/*I) 1) Général*/
 .widget { /*Couleur de fond des widgets*/
   background-color: #140a0aed !important; 
   backdrop-filter: blur(2px);
@@ -21,16 +107,18 @@
   border: none !important;
 }
 
-/*Agenda*/
+/*I) 2) Agenda*/
 .ocb-libelle.ie-ellipsis { /*Couleur texte du jour dans l'agenda*/
   color: #000000 !important;
 }
 
 .icon_angle_right.fix-bloc.icon.btnImageIcon.btnImage, .icon_angle_left.fix-bloc.icon.btnImageIcon.btnImage { /*Couleur icône "Suivant"*/
   background-color: #c91b21 !important;
+  color: #ffffff !important;
 }
-.icon_angle_right.fix-bloc.icon.btnImageIcon.btnImage:hover, .icon_angle_left.fix-bloc.icon.btnImageIcon.btnImage:hover { /*Couleur icône "Suivant"*/
+.icon_angle_right.fix-bloc.icon.btnImageIcon.btnImage:hover, .icon_angle_left.fix-bloc.icon.btnImageIcon.btnImage:hover { /*Couleur icône "Suivant" au hover*/
   background-color: #882d14 !important;
+  color: #ffffff !important;
 }
 
 .ocb_cont.as-input.as-date-picker.ie-ripple { /*Bordure du jour*/
@@ -55,6 +143,11 @@
   box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
 }
 
+.widget.ThemeCat-edt.edt.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
+  color: #d25858 !important; 
+}
+
+/*I) 2) A) Contenu pédagogique*/
 .icon_contenu_cours.avecFond.btnImage { /*Couleur icône "Contenu Pédagogique"*/
   background-color: #c91b21 !important;
   color: #ffffff !important;
@@ -72,11 +165,7 @@
   color: #ffffff !important;
 }
 
-.widget.ThemeCat-edt.edt.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
-  color: #d25858 !important; 
-}
-
-/*Travail à faire*/
+/*I) 3) Travail à faire*/
 .widget.ThemeCat-pedagogie.taf.collapsible .clickable { /*Couleur texte en-tête*/
   color: #e7901d !important;
   font-weight: bold !important;
@@ -84,14 +173,14 @@
 .widget.ThemeCat-pedagogie.taf.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
   color: #a06519 !important;
 }
-.widget.ThemeCat-pedagogie.taf.collapsible .no-events p { /*Couleur texte "Aucun travail à faire" du dessous*/
+.widget.ThemeCat-pedagogie.taf.collapsible .no-events p { /*Couleur texte "Aucun travail à faire"*/
   color: #a06519 !important;
 }
 .widget.ThemeCat-pedagogie.taf.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #ffc77d !important; 
 }
 
-/*Dernières ressources pédagogiques*/
+/*I) 4) Dernières ressources pédagogiques*/
 .widget.ThemeCat-pedagogie.ressourcespedagogiques.collapsible .clickable.ie-ellipsis { /*Couleur texte en-tête*/
   color: #935ec7 !important;
   font-weight: bold !important;
@@ -106,11 +195,15 @@
   color: #bb83ff !important;
 }
 
-/*Assiduité*/
+/*I) 5) Assiduité*/
 .widget.ThemeCat-viescolaire.absences.collapsible .clickable { /*Couleur texte en-tête*/
   color: #ca4520 !important;
   font-weight: bold !important;
 }
+.widget.ThemeCat-viescolaire.absences.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
+  color: #A13213 !important;
+}
+
 .widget.ThemeCat-viescolaire.absences.collapsible .icon.icon_absences:hover { /*Couleur fond absence au Hover*/
   background-color: #ca452060 !important;
 }
@@ -120,20 +213,18 @@
 .widget.ThemeCat-viescolaire.absences.collapsible .date { /*Couleur texte dates des absences*/
   background-color: #5a5a5a60 !important;
 }
-.widget.ThemeCat-viescolaire.absences.collapsible .icon.icon_absences::before { /*Couleur icône gauche absence*/
+.widget.ThemeCat-viescolaire.absences.collapsible .icon.icon_absences::before { /*Couleur dessin gauche absence*/
   color: #d25544 !important;
 }
-.widget.ThemeCat-viescolaire.absences.collapsible .clickable:hover { /*Couleur texte en-tête au Hover*/
+.widget.ThemeCat-viescolaire.absences.collapsible .no-events p { /*Couleur texte "Aucun nouvel évènement"*/
   color: #A13213 !important;
 }
-.widget.ThemeCat-viescolaire.absences.collapsible .no-events p { /*Couleur texte "Aucune nouvel évènement"*/
-  color: #A13213 !important;
-}
+
 .widget.ThemeCat-viescolaire.absences.collapsible .content-container.overflow-auto::after { /*Couleur dessin*/
   color: #d25544 !important; 
 }
 
-/*Informations & Sondages*/
+/*I) 6) Informations & Sondages*/
 .widget.ThemeCat-communication.actualites.collapsible .clickable { /*Couleur texte en-tête*/
   color: #049d65 !important;
   font-weight: bold !important;
@@ -148,7 +239,7 @@
   color: #3ad9a1 !important; 
 }
 
-/*Enseignements par matière*/
+/*I) 7) Enseignements par matière*/
 .widget.ThemeCat-viescolaire.cursusetudiant.collapsible .clickable.ie-ellipsis { /*Couleur texte en-tête*/
   color: #ca4520 !important;
   font-weight: bold !important;
@@ -167,29 +258,30 @@
   color: #882d14 !important;
 }
 
-.ProgressionCercle { /*Couleur du cercle de progression inachevé*/
+/*I) 7) A) Progression des cours*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ProgressionCercle { /*Couleur du cercle de progression inachevé*/
   background-color: transparent !important;
 }
 
-.ProgressionCercle_firstClip, .ProgressionCercle_lastClip { /*Couleur cercle de progression achevé*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ProgressionCercle_firstClip, .widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ProgressionCercle_lastClip { /*Couleur cercle de progression achevé*/
   background-color: #b64642 !important;
   border-color: #b64642 !important;
 }
 
-.ProgressionCercle:hover { /*Couleur bordure du cercle de progression*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ProgressionCercle:hover { /*Couleur bordure du cercle de progression*/
   box-shadow: 0px 0px 10px 2px #A13213 !important;
 }
 
-.ProgressionCercle_libelle { /*Couleur intérieure du cercle de progression*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ProgressionCercle_libelle { /*Couleur intérieure du cercle de progression*/
   background-color: #1f1d1c !important;
   color: #d3d3d3 !important;
 }
 
-.ie-ellipsis { /*Couleur textes heures totales de cours*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .ie-ellipsis { /*Couleur textes heures totales de cours*/
   color: #d3d3d3 !important;
 }
 
-.liste-matieres li { /*Couleur bordures au dessus des matières*/
+.widget.ThemeCat-viescolaire.cursusetudiant.collapsible .liste-matieres li { /*Couleur bordures au dessus des matières*/
   border-top: solid 1px #ca4520 !important;
 }
 
@@ -198,94 +290,96 @@
 }
 
 /*
-|--- Agenda fenêtres ---|
+II) Agenda fenêtres
 */
-
-/*Fenêtre "Choisir un jour"*/
+/*II) 1) Fenêtre "Choisir un jour"*/
 .BloquerInterface.NePasImprimer.SansSelectionTexte.VoileOpaque50 { /*Blocage fond de fenêtre*/
   background: rgb(53, 53, 53) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
-.Fenetre_Cadre.ombre-cadre { /*Couleur de fond*/
-  background-color: #140a0a !important; 
-}
-.ObjetFenetre_Espace .ombre-cadre { /*Couleur d'ombre*/
-  box-shadow: 0px 0px 18px 8px rgba(172, 172, 172, 0.101) !important;
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .Fenetre_Cadre.ombre-cadre { /*Couleur de fond et d'ombre*/
+  background-color: #140a0a !important; /*Couleur de fond*/
+  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important; /*Couleur d'ombre*/
 }
 
-.ZoneDeplacementFenetre.ie-draggable-handle[id^="IE.Identite.collection"] { /*Couleur texte en-tête*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .ZoneDeplacementFenetre.ie-draggable-handle { /*Couleur texte en-tête*/
   color: #ffffff !important;
   font-weight: bold !important;
 }
 
-.date.actif, .date { /*Couleur de fond & texte Calendrier*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .date.actif, .ObjetFenetre_Espace.ObjetFenetre_Date_racine .date { /*Couleur de fond & texte Calendrier*/
   background: #474747 !important;
   color: #ffffff !important;
   font-weight: bold !important;
 }
 
-.icon_angle_left.icon.btnImageIcon.btnImage, .icon_angle_right.icon.btnImageIcon.btnImage {/*Couleur icônes "Précédent" & "Suivant"*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .icon_angle_left.icon.btnImageIcon.btnImage, .ObjetFenetre_Espace.ObjetFenetre_Date_racine .icon_angle_right.icon.btnImageIcon.btnImage {/*Couleur icônes "Précédent" & "Suivant"*/
   background-color: #ca4520 !important;
   color: #ffffff !important;
 }
-.icon_angle_left.icon.btnImageIcon.btnImage:hover, .icon_angle_right.icon.btnImageIcon.btnImage:hover {/*Couleur icônes "Précédent" & "Suivant" au Hover*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .icon_angle_left.icon.btnImageIcon.btnImage:hover, .ObjetFenetre_Espace.ObjetFenetre_Date_racine .icon_angle_right.icon.btnImageIcon.btnImage:hover {/*Couleur icônes "Précédent" & "Suivant" au Hover*/
   background-color: #A13213 !important;
   color: #ffffff !important;
 }
 
-.date:hover [id^="IE.Identite.collection"] { /*Date au Hover*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .date:hover [id^="IE.Identite.collection"] { /*Date au Hover*/
   background: #A13213 !important;
   border-radius: 5px !important;
 }
 
-.date.actif.selected-date [id^="IE.Identite.collection"] { /*Couleur bordure & texte de la date active*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .date.actif.selected-date [id^="IE.Identite.collection"] { /*Couleur bordure & texte de la date active*/
   border-color: #A13213 !important;
   border-radius: 5px !important;
   color: #A13213 !important;
   font-weight: bold !important;
 }
-.date.actif.current-month.current-date.selected-date [id^="IE.Identite.collection"] > div > div { /*Couleur rond de la date active*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .date.actif.current-month.current-date.selected-date [id^="IE.Identite.collection"] > div > div { /*Couleur rond de la date active*/
   background-color: #ffffff !important;
 }
 
-.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage { /*Buton Fermer*/
-  background-color: #A13213 !important;
-  border-color: #ffffff !important;
-  border-width: 2px !important;
-  color: #ffffff !important;
-}
-.themeBoutonSecondaire.ieBouton.ie-ripple.NoWrap.ieBoutonDefautSansImage:hover { /*Buton Fermer au Hover*/
-  background-color: #ffffff !important;
-  background-position: center !important;
-  border-color: #A13213 !important;
-  border-width: 2px !important;
-  color: #A13213 !important;
-}
-
-.Fenetre_Titre.NePasImprimer .cta-conteneur { /*Supprime le bouton "Fermer / X" inutile*/
+.ObjetFenetre_Espace.ObjetFenetre_Date_racine .Fenetre_Titre.NePasImprimer .cta-conteneur { /*Supprime le bouton "Fermer / X" inutile*/
   display: none !important; 
 }
 
-/*Fenêtre "Détail du jour"*/
-.Fenetre_Cadre.ombre-cadre { /*Couleur de fond */
-  background-color: #140a0a !important;
+/*II) 2) Fenêtre "Contenu(s) pédagogique(s)"*/
+.ObjetFenetre_Espace.ObjetFenetre_Bloc_racine .Fenetre_Cadre.ombre-cadre { /*Couleur de fond et d'ombre*/
+  background-color: #140a0af3 !important; /*Couleur de fond*/
+  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important; /*Couleur d'ombre*/
 }
-.DivBloc.MargeGaucheBloc { /*Couleur de fond du contenu*/
+.ObjetFenetre_Espace.ObjetFenetre_Bloc_racine .DivBloc.MargeGaucheBloc { /*Couleur de fond du contenu*/
   background-color: #1F1C1D !important; 
 }
-.UtilitaireBloc_itemInverse > div, .EspaceHaut { /*Couleur texte*/
-  color: #d3d3d3 !important;
+.ObjetFenetre_Espace.ObjetFenetre_Bloc_racine .UtilitaireBloc_itemInverse > div, .ObjetFenetre_Espace.ObjetFenetre_Bloc_racine .EspaceHaut { /*Couleur texte*/
+  color: #ffffff !important;
+}
+
+/*II) 3) Fenêtre "Mémo du cours"*/
+.ObjetFenetre_Espace.ObjetFenetreEspace_racine .Fenetre_Cadre.ombre-cadre { /*Couleur de fond et d'ombre*/
+  background-color: #140a0af3 !important; /*Couleur de fond*/
+  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important; /*Couleur d'ombre*/
+}
+
+.ObjetFenetre_Espace.ObjetFenetreEspace_racine .ZoneDeplacementFenetre.ie-draggable-handle { /*Couleur texte en-tête*/
+  color: #ffffff !important; 
+  font-weight: bold !important;
+}
+.ObjetFenetre_Espace.ObjetFenetreEspace_racine .Fenetre_Espace { /*Couleur texte*/
+  color: #ffffff !important; 
+}
+
+.ObjetFenetre_Espace.ObjetFenetreEspace_racine .btnImageIcon.as-button.icon_fermeture_widget.btnImage { /*Supprime le bouton "Fermer / X" inutile*/
+  display: none !important;
 }
 
 
 /*
-|--- Themes ---|
+III) Thèmes
 */
 
 .ThemeBleu, body:not(.ThemeAccessible) .ThemeProduitEDT,
 body:not(.ThemeAccessible) .ThemeEDT,
-body:not(.ThemeAccessible) .ThemeCat-viescolaire {
-  --theme-moyen1: #151515 !important; /*Contours pointillets énervants au rafraîchissement de page*/
+body:not(.ThemeAccessible) .ThemeCat-viescolaire { /*Contours pointillets énervants au rafraîchissement de page*/
+  --theme-moyen1: #151515 !important; 
 }
