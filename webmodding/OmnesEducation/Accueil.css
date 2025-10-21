@@ -88,7 +88,7 @@ I) Widgets
 */
 /*I) 1) Général*/
 .widget { /*Couleur de fond des widgets*/
-  background-color: #140a0aed !important; 
+  background-color: #140a0ad6 !important; 
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(6px);
   box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);

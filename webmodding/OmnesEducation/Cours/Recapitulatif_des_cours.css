@@ -1,14 +1,76 @@
 /*
-|--- 3eme Bandeau ---|
+I) Fond
+  - SVG de fond
+  - Gradient
+    - Masque SVG
+  - Animation du gradient
+II) 3eme Bandeau
+  - Couleur texte "du" , "au"
+III) Tableau
+  - Couleur en-tête du tableau
+  - Couleur fond tableau
+  - Couleur fond sous sections du tableau
+*/
+
+
+
+/*
+I) Fond
+*/
+.interface_affV_client .full-size { /*Svg de fond*/
+  position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
+  width: 200vh;
+  height: 200vh;
+  background-color: #151515 !important;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: relative;
+  z-index: 1;
+}
+
+.interface_affV_client .full-size::before { /*Gradient*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(65deg,#ffaa00, #ff0000);
+  animation: aniGradient 12s linear infinite;
+  background-size: 500%;
+
+  opacity: 1;
+  z-index: -1;
+
+  /* Masque SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: relative;
+}
+
+/* Animation du gradient */
+@keyframes aniGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/*
+II) 3eme Bandeau
 */
 .objetBandeauEntete_thirdmenu .Gras { /*Couleur texte "du" , "au"*/
   color: #ffffff !important;
 }
 
+
 /*
-|--- Tableau ---|
+III) Tableau
 */
-.full-height .as-header * { /*Couleur haut*/
+.full-height .as-header * { /*Couleur en-tête du tableau*/
   background-color: #140a0aed !important; 
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(6px);

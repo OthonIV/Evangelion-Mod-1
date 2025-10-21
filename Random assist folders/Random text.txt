@@ -1,83 +1,52 @@
-I) Widgets
-  1) Général
-    - Couleur de fond des widgets
-    - Couleur icône "tout voir"
-    - Couleur icône "tout voir" au Hover
-  2) Agenda
-    - Couleur texte du jour dans l'agenda
-    - Couleur icône "Suivant"
-    - Couleur icône "Suivant" au hover
-    - Bordure du jour
-    - Couleur petite icône calendrier
-    - Couleur petite icône calendrier au Hover
-    - Couleur texte Semaine
-    - Fond de l'heure en cours relevé
-    - Couleur dessin
-    A) Contenu pédagogique
-      - Couleur icône "Contenu Pédagogique"
-      - Couleur icône "Contenu Pédagogique" au Hover
-      - Couleur icône "Mémo du cours"
-      - Couleur icône "Mémo du cours" au Hover
-  3) Travail à faire
-    - Couleur texte en-tête
-    - Couleur texte en-tête au Hover
-    - Couleur texte "Aucun travail à faire"
-    - Couleur dessin
-  4) Dernières ressources pédagogiques
-    - Couleur texte en-tête
-    - Couleur texte en-tête au Hover
-    - Couleur texte "Aucune ressource pédagogique"
-    - Couleur dessin
-  5) Assiduité
-    - Couleur texte en-tête
-    - Couleur texte en-tête au Hover
-    - Couleur fond absence au Hover
-    - Couleur texte "Absences"
-    - Couleur texte dates des absences
-    - Couleur dessin gauche absence
-    - Couleur texte "Aucun nouvel évènement"
-    - Couleur dessin
-  6) Informations & Sondages
-    - Couleur texte en-tête
-    - Couleur texte en-tête au Hover
-    - Couleur texte "Aucune nouvelle information"
-    - Couleur dessin
-  7) Enseignements par matières
-    - Couleur texte en-tête
-    - Couleur texte en-tête au Hover
-    - Couleur bordure de "Année complète"
-    - Couleur icône à droite de "Année complète"
-    - Couleur icône à droite de "Année complète" au Hover
-    A) Progression des cours
-      - Couleur du cercle de progression inachevé
-      - Couleur cercle de progression achevé
-      - Couleur bordure du cercle de progression
-      - Couleur intérieure du cercle de progression
-      - Couleur textes heures totales de cours
-      - Couleur bordures au dessus des matières
-      - Couleur dessin
-II) Agenda fenêtres
-  1) Fenêtre "Choisir un jour"
-    - Blocage fond de fenêtre
-    - Couleur de fond et d'ombre
-    - Couleur texte en-tête
-    - Couleur de fond & texte Calendrier
-    - Couleur icônes "Précédent" & "Suivant"
-    - Couleur icônes "Précédent" & "Suivant" au Hover
-    - Date au Hover
-    - Couleur bordure & texte de la date active
-    - Couleur rond de la date active
-    - Supprime le bouton "Fermer / X" inutile
-  2) Fenêtre "Contenu(s) pédagogique(s)"
-    - Couleur de fond et d'ombre
-    - Couleur de fond du contenu
+I) Fonds
+  - Couleur de fond
+  - Contour du fond
+II) 3eme Bandeau
+  - Couleur de fond
+  - Couleur texte éléments du bandeau déroulant
+  1) Menu nom
+    - Couleur bordure du nom au Hover
+    - Couleur icône à droite du nom
+    - Couleur icône à droite du nom au Hover
+    A) Menu déroulant
+      - Couleur du fond
+      - Couleur du texte
+      - Couleur de l'élément au Hover
+  2) Icônes
+    - Couleur icône "Afficher les cours des autres promotions/TD/Options liés aux TD/Options affichés"
+    - Couleur icône "Afficher les cours des TD/options liés au sein de la promotion"
+    - Couleur icône "Afficher les cours de la promotion"
+    - Couleur icône "Masquer les cours de TD et d'option"
+    - Couleur icône paramètres
+    - Couleur icône paramètres au Hover
+III) 4eme Bandeau
+  1) Gauche
+    - Bordure type calendrier
+    - Couleur icône "v" à droite du type
+    - Couleur icône "v" à droite du type au Hover
+    A) Menu déroulant
+      - Couleur du fond
+      - Couleur du texte
+      - Couleur de l'élément au Hover
+  2) Jours
+    - Couleur des petits contours moches et relous
+    - Couleur séparateurs des semaines
+    - Couleur des semaines
+    - Couleur petit carré du dessous
+  3) Mois
+    - Couleur mois
+IV) Calendrier
+  1) Extérieur
+    - Couleur texte jours
+    - Couleur texte heures
+  2) Calendrier (intérieur)
+    - Couleur bordure heure sélectionnée pour ouvrir la fenêtre des séances publiées
+    A) Fenêtre séances publiées
+    - Couleur de fond & d'ombre
+    - Couleur texte entête
     - Couleur texte
-  3) Fenêtre "Mémo du cours"
-    - Couleur de fond et d'ombre
-    - Couleur texte en-tête
-    - Couleur texte
-III) Thèmes
-    - Contours pointillets énervants au rafraîchissement de page
+    - Contenu
+    - Contenu, exceptions pour éviter les fonds se superposant
 
 
 

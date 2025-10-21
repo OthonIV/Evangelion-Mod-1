@@ -1,62 +1,104 @@
 /*
-|--- Fonds ---|
+I) Fonds
+  - Couleur de fond
+  - Contour du fond
+II) 3eme Bandeau
+  - Couleur de fond
+  - Couleur texte éléments du bandeau déroulant
+  1) Menu nom
+    - Couleur bordure du nom au Hover
+    - Couleur icône à droite du nom
+    - Couleur icône à droite du nom au Hover
+    A) Menu déroulant
+      - Couleur du fond
+      - Couleur du texte
+      - Couleur de l'élément au Hover
+  2) Icônes
+    - Couleur icône "Afficher les cours des autres promotions/TD/Options liés aux TD/Options affichés"
+    - Couleur icône "Afficher les cours des TD/options liés au sein de la promotion"
+    - Couleur icône "Afficher les cours de la promotion"
+    - Couleur icône "Masquer les cours de TD et d'option"
+    - Couleur icône paramètres
+    - Couleur icône paramètres au Hover
+III) 4eme Bandeau
+  1) Gauche
+    - Bordure type calendrier
+    - Couleur icône "v" à droite du type
+    - Couleur icône "v" à droite du type au Hover
+    A) Menu déroulant
+      - Couleur du fond
+      - Couleur du texte
+      - Couleur de l'élément au Hover
+  2) Jours
+    - Couleur des petits contours moches et relous
+    - Couleur séparateurs des semaines
+    - Couleur des semaines
+    - Couleur petit carré du dessous
+  3) Mois
+    - Couleur mois
+IV) Calendrier
+  1) Extérieur
+    - Couleur texte jours
+    - Couleur texte heures
+  2) Calendrier (intérieur)
+    - Couleur bordure heure sélectionnée pour ouvrir la fenêtre des séances publiées
+    A) Fenêtre séances publiées
+    - Couleur de fond & d'ombre
+    - Couleur texte entête
+    - Couleur texte
+    - Contenu
+    - Contenu, exceptions pour éviter les fonds se superposant
 */
-.ObjetInterfaceEspaceEdT { /*Svg de fond*/
-  position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
-  width: 200vh;
-  height: 200vh;
-  background-color: #151515 !important;
-  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: relative;
-  z-index: 1;
-}
 
 
-.ObjetInterfaceEspaceEdT::before { /*Gradient*/
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background: linear-gradient(
-    65deg,
-    #ffaa00, #ff0000
-  );
-  animation: aniGradient 12s linear infinite;
-  background-size: 500%;
-
-  opacity: 1;
-  z-index: 0;
-
-  /* Masque SVG */
-  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: relative;
-}
-
-/* Animation du gradient */
-@keyframes aniGradient {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 /*
-|--- 3eme Bandeau ---|
+I) Fonds
+*/
+.interface_affV_client .ObjetInterfaceEspaceEdT .principal { /*Couleur de fond*/
+    background: linear-gradient(135deg, #53090c,#121212, #53090c) !important;
+    z-index: 1 !important;
+}
+.ObjetInterfaceEspaceEdT { /*Contour du fond*/
+  background-color: #151515 !important;
+}
+
+
+/*
+II) 3eme Bandeau
 */
 .objetBandeauEntete_thirdmenu { /*Couleur de fond*/
     background-color: #151515 !important;
 }
 
-.objetBandeauEntete_thirdmenu .titre-onglet { /*Couleur texte "En grille/liste/planning"*/
+.objetBandeauEntete_thirdmenu .titre-onglet { /*Couleur texte de "En grille ; liste ; planning"*/
     color: #ffffff !important;
 }
-/*Icônes*/
+
+/*II) 1) Menu nom*/
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_cont.as-input.as-select.ie-ripple:hover { /*Couleur bordure du nom au Hover*/
+    border-color: #c91b21 !important;
+}
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton { /*Couleur icône à droite du nom "v"*/
+    color: #c91b21 !important;
+}
+.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton:hover { /*Couleur icône à droite du nom au Hover*/
+    color: #882d14 !important;
+}
+/*II) 1) A) Menu déroulant*/
+.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .deroulant-conteneur-show-hide { /*Couleur du fond*/
+  background: rgba(40, 40, 40, 0.5) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .liste-as-options * { /*Couleur du texte */
+  color: #ffffff !important;
+}
+.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .as-li.c_1.selected { /*Couleur de l'élément au Hover*/
+  background: rgba(216, 216, 216, 0.5) !important;
+}
+
+/*II) 2) Icônes*/
 .filtres-conteneur .icon_fiche_T.mix-icon_link.bt-activable.btnImage { /*Couleur icône "Afficher les cours des autres promotions/TD/Options liés aux TD/Options affichés"*/
     background-color: #ddb559 !important;
     --stroke-color: #ddb559 !important;
@@ -84,67 +126,53 @@
     color: #dd6f59 !important;
 }
 
-/*Menu nom*/
-.objetBandeauEntete_thirdmenu .input-wrapper .ocb_cont.as-input.as-select.ie-ripple:hover { /*Couleur bordure du nom au Hover*/
-    border-color: #c91b21 !important;
-}
-.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton { /*Couleur icône à droite du nom*/
-    color: #c91b21 !important;
-}
-.objetBandeauEntete_thirdmenu .input-wrapper .ocb_bouton:hover { /*Couleur icône à droite du nom au Hover*/
-    color: #882d14 !important;
-}
-
-.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .deroulant-conteneur-show-hide { /*Couleurs menu déroulant*/
-  background: rgba(40, 40, 40, 0.5) !important;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-.objetBandeauEntete_thirdmenu .ObjetSaisie_cont .as-li.c_1.selected { /*Couleurs de l'élément au Hover*/
-  background: rgba(216, 216, 216, 0.5) !important;
-}
 
 /*
-|--- 4eme Bandeau ---|
+III) 4eme Bandeau
 */
-/*Gauche*/
+/*III) 1) Type*/
 .calendrier.hide .ocb_cont.as-input.as-select.ie-ripple { /*Bordure type calendrier*/
   border-color: #c91b21 !important;
 }
-.calendrier.hide .input-wrapper .ocb_bouton { /*Couleur icône à droite du type*/
+.calendrier.hide .input-wrapper .ocb_bouton { /*Couleur icône "v" à droite du type*/
     color: #c91b21 !important;
 }
-.calendrier.hide .input-wrapper .ocb_bouton:hover { /*Couleur icône à droite du type au Hover*/
+.calendrier.hide .input-wrapper .ocb_bouton:hover { /*Couleur icône "v" à droite du type au Hover*/
     color: #882d14 !important;
 }
 
-.calendrier.hide .deroulant-conteneur-show-hide { /*Couleurs menu déroulant*/
+/*III) 1) A) Menu déroulant*/
+.calendrier.hide .deroulant-conteneur-show-hide { /*Couleur du fond*/
   background: rgba(40, 40, 40, 0.5) !important;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
-.calendrier.hide .deroulant-conteneur-show-hide .as-li.c_1.selected { /*Couleurs de l'élément au Hover*/
+.calendrier.hide .deroulant-conteneur-show-hide .liste-as-options * { /*Couleur du texte */
+  color: #ffffff !important;
+}
+.calendrier.hide .deroulant-conteneur-show-hide .as-li.c_1.selected { /*Couleur de l'élément au Hover*/
   background: rgba(216, 216, 216, 0.5) !important;
 }
 
-/*Jours*/
-.calendrier.hide .ie-draggable-handle.tableJours {
-    background-color: #ffffff !important; /*Couleur de fond*/
+/*III) 2) Jours*/
+.calendrier.hide .ie-draggable-handle.tableJours { /*Couleur des petits contours moches et relous*/
+    background-color: #ffffff !important; 
     border: black;
 }
-.calendrier.hide .Calendrier_Jour_td { /*Couleur des jours*/
+.calendrier.hide .Calendrier_Jour_td { /*Couleur séparateurs des semaines*/
     border-color: #ffffff !important;
 }
-.calendrier.hide .calendrier-jour.ie-draggable-handle { /*Couleur du jour sélectionné*/
+.calendrier.hide .calendrier-jour.ie-draggable-handle { /*Couleur des semaines*/
     background: #991c20 !important;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px inset !important;
+    box-shadow: rgba(0, 0, 0, 0.507) 0px 3px 15px inset !important;
     color: #ffffff !important;
 }
 .calendrier.hide .calendrier-jour-domaine { /*Couleur petit carré du dessous*/
     background-color: #151515 !important;
     border-top: #ffffff !important;
 }
-/*Mois*/
+
+/*III) 3) Mois*/
 .calendrier.hide .tableMois, .calendrier.hide .Texte10.Gras.FondBlanc.Calendrier_Mois { /*Couleur mois*/
     border-color: #ffffff !important;
     background-color: #151515 !important;
@@ -152,8 +180,9 @@
 }
 
 /*
-|--- Calendrier ---|
+IV) Calendrier
 */
+/*IV) 1) Extérieur*/
 .grille .InlineBlock.WhiteSpaceNormal.AlignementMilieuVertical.AlignementMilieu { /*Couleur texte jours*/
   color: #ffffff !important;
 }
@@ -161,12 +190,16 @@
   color: #ffffff !important;
 }
 
-/*
-|--- Fenetre séances publiées ---|
-*/
+/*IV) 2) Calendrier (intérieur)*/
+.selectionCoursGrille .cadre { /*Couleur bordure heure sélectionnée pour ouvrir la fenêtre des séances publiées*/
+  border-color: #c91b21 !important;
+}
+
+/*IV) 2) A) Fenêtre séances publiées*/
+
 .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .Fenetre_Cadre.ombre-cadre{ /*Couleur de fond & d'ombre*/
-  background-color: #140a0af3 !important; /*Couleur de fond*/
-  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important; /*Couleur d'ombre*/
+  background-color: #140a0af3 !important;
+  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important;
 }
 
 .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .AvecMove.ie-draggable-handle { /*Couleur texte entête*/
@@ -176,7 +209,13 @@
   color: #ffffff !important;
 }
 
-.ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 *{ /*Contenu*/
+.ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 * { /*Contenu*/
   background-color: #991c2023 !important;
+  color: #ffffff !important;
+}
+.ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 .teams *,
+.ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 .sws *,
+.ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 .hp * { /*Contenu, exceptions pour éviter les fonds se superposant*/
+  background-color: transparent !important;
   color: #ffffff !important;
 }
