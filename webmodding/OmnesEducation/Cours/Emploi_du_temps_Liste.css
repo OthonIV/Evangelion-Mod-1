@@ -1,0 +1,35 @@
+/*
+I) Fonds
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+II) Jours liste
+*/
+/*II) 1) Jour*/
+.grille .Texte10.WhiteSpaceNormal.cellpadding-3 .Gras :not([style="width: 250px;"]) { /*Couleur jour en-tête*/
+    background-color: #140a0aed !important; 
+    color: #ffffff !important;
+}
+
+/*II) 2) Contenu*/
+.grille .Texte10.WhiteSpaceNormal.cellpadding-3 .AvecMain.c_24 td[style="font-size: 1px; width: 5px;  border-left: 1px solid var(--theme-neutre-moyen2); border-bottom: 1px solid var(--theme-neutre-moyen2);  background-color:white;"] { /*Couleur bordure gauche*/
+    background-color: #3927277f !important; 
+}
+
+.grille .Texte10.WhiteSpaceNormal.cellpadding-3 .AvecMain.c_24 { /*Couleur du contenu*/
+    background-color: #3927277f !important; 
+    color: #ffffff !important;
+}
