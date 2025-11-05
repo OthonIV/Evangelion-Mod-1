@@ -78,3 +78,35 @@ body:has(.titre-onglet[aria-label="en liste"])
   box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
   color: #d3d3d3 !important;
 }
+
+/*IV) 2) A) Fenêtre séances publiées*/
+
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .Fenetre_Cadre.ombre-cadre{ /*Couleur de fond & d'ombre*/
+  background-color: #140a0af3 !important;
+  box-shadow: 0px 0px 18px 6px rgb(70, 70, 70) !important;
+}
+
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .AvecMove.ie-draggable-handle { /*Couleur texte entête*/
+  color: #ffffff !important;
+}
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .EspaceBas { /*Couleur texte*/
+  color: #ffffff !important;
+}
+
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 * { /*Contenu*/
+  background-color: #991c2023 !important;
+  color: #ffffff !important;
+}
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 .teams *,
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 .sws *,
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetFenetre_Espace.ObjetFicheDetailSeances_racine .full-width.cellpadding-3 .hp * { /*Contenu, exceptions pour éviter les fonds se superposant*/
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
