@@ -1,17 +1,53 @@
 /*
-I) Fonds
+I) Fond
 */
+body:has(.titre-onglet[aria-label="en liste"])
+ .interface_affV_client .ObjetInterfaceEspaceEdT .principal { /*Svg de fond*/
+  position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
+  width: 200vh;
+  height: 200vh;
+  background-color: #151515 !important;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: relative;
+  z-index: 1;
+}
 
+body:has(.titre-onglet[aria-label="en liste"])
+ .interface_affV_client .ObjetInterfaceEspaceEdT .principal::before { /*Gradient*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
+  background: linear-gradient(65deg,#ffaa00, #ff0000);
+  animation: aniGradient 12s linear infinite;
+  background-size: 500%;
 
+  opacity: 1;
+  z-index: -1;
 
+  /* Masque SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: relative;
+}
 
+/* Animation du gradient */
+@keyframes aniGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-
-
-
-
-
+body:has(.titre-onglet[aria-label="en liste"])
+ .ObjetInterfaceEspaceEdT { /*Contour du fond*/
+  background-color: #151515 !important;
+}
 
 
 
@@ -19,17 +55,26 @@ I) Fonds
 II) Jours liste
 */
 /*II) 1) Jour*/
-.grille .Texte10.WhiteSpaceNormal.cellpadding-3 .Gras :not([style="width: 250px;"]) { /*Couleur jour en-tête*/
-    background-color: #140a0aed !important; 
-    color: #ffffff !important;
+body:has(.titre-onglet[aria-label="en liste"])
+ .grille .Texte10.WhiteSpaceNormal.cellpadding-3 .Gras:not([style="width: 250px;"]) { /*Couleur jour en-tête*/
+  background-color: #000000ed !important; 
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
+  color: #d3d3d3 !important;
 }
 
 /*II) 2) Contenu*/
-.grille .Texte10.WhiteSpaceNormal.cellpadding-3 .AvecMain.c_24 td[style="font-size: 1px; width: 5px;  border-left: 1px solid var(--theme-neutre-moyen2); border-bottom: 1px solid var(--theme-neutre-moyen2);  background-color:white;"] { /*Couleur bordure gauche*/
+body:has(.titre-onglet[aria-label="en liste"])
+ .grille .Texte10.WhiteSpaceNormal.cellpadding-3 .AvecMain[class*=" c_"] td[style="font-size: 1px; width: 5px;  border-left: 1px solid var(--theme-neutre-moyen2); border-bottom: 1px solid var(--theme-neutre-moyen2);  background-color:white;"] { /*Couleur bordure gauche*/
     background-color: #3927277f !important; 
 }
 
-.grille .Texte10.WhiteSpaceNormal.cellpadding-3 .AvecMain.c_24 { /*Couleur du contenu*/
-    background-color: #3927277f !important; 
-    color: #ffffff !important;
+body:has(.titre-onglet[aria-label="en liste"])
+ .grille .Texte10.WhiteSpaceNormal.cellpadding-3 .AvecMain[class*=" c_"] { /*Couleur du contenu*/
+  background-color: #140a0aed !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 1px 1px 8px 1px rgba(155, 155, 155, 0.2);
+  color: #d3d3d3 !important;
 }
