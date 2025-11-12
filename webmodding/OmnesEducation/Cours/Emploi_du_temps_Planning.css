@@ -1,0 +1,78 @@
+/*
+I) Fond
+*/
+body:has(.titre-onglet[aria-label="en planning"])
+ .interface_affV_client .ObjetInterfaceEspaceEdT .principal { /*Svg de fond*/
+  position: relative; /* Essentiel pour positionner le ::before pseudo-élément */
+  width: 200vh;
+  height: 200vh;
+  background-color: #151515 !important;
+  background-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: relative;
+  z-index: 1;
+}
+
+body:has(.titre-onglet[aria-label="en planning"])
+ .interface_affV_client .ObjetInterfaceEspaceEdT .principal::before { /*Gradient*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(65deg,#ffaa00, #ff0000);
+  animation: aniGradient 12s linear infinite;
+  background-size: 500%;
+
+  opacity: 1;
+  z-index: -1;
+
+  /* Masque SVG */
+  mask-image: url("https://raw.githubusercontent.com/OthonIV/Evangelion-Mod-1/main/Images/OmnesEducation/7Eyes%20Slim.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: relative;
+}
+
+/* Animation du gradient */
+@keyframes aniGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body:has(.titre-onglet[aria-label="en planning"])
+ .ObjetInterfaceEspaceEdT,
+body:has(.titre-onglet[aria-label="en planning"])
+ .interface_affV_client { /*Contour du fond*/
+  background-color: #151515 !important;
+}
+
+/*
+II) Planning
+*/
+/*II) 1) Jours*/
+body:has(.titre-onglet[aria-label="en planning"])
+ .InlineBlock.AlignementMilieu.NoWrap { /*Couleur jour en-tête*/
+  background-color: #ff7300 !important;
+  color: #ffffff !important;
+}
+
+body:has(.titre-onglet[aria-label="en planning"])
+ .AlignementGauche[class*="Texte"] { /*Couleur heures*/
+  color: #ffffff !important;
+}
+
+body:has(.titre-onglet[aria-label="en planning"])
+ .WhiteSpaceNormal.AlignementMilieuVertical{ /*Couleur n° semaine*/
+  color: #ffffff !important;
+}
+
+/*II) 2) Grille*/
+body:has(.titre-onglet[aria-label="en planning"])
+ .corpsGrille .conteneurAbs [id^="id_"][id$="fond"] {
+    opacity: 0.9 !important;
+}
